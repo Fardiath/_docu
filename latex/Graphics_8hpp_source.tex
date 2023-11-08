@@ -1,0 +1,40 @@
+\hypertarget{Graphics_8hpp_source}{}\doxysection{Graphics.\+hpp}
+\label{Graphics_8hpp_source}\index{client/Graphic/include/Graphics.hpp@{client/Graphic/include/Graphics.hpp}}
+\mbox{\hyperlink{Graphics_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ IGUI.h}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ IGUI}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ \_CLIENT\_GRAPHICS\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ \_CLIENT\_GRAPHICS\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{PageMenu_8hpp}{PageMenu.hpp}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{PageSetting_8hpp}{PageSetting.hpp}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{PageGame_8hpp}{PageGame.hpp}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{PageOver_8hpp}{PageOver.hpp}}"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacert}{rt}}\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classrt_1_1GUI}{GUI}}\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1GUI}{GUI}}(std::string\ \textcolor{keyword}{const}\ \&windowName,\ \mbox{\hyperlink{structrt_1_1GameData}{GameData}}\ \&data);}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1GUI_ac5514e338f501929af48a287b8aa4782}{\string~GUI}}(\textcolor{keywordtype}{void})\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44f}{Event}}\ \mbox{\hyperlink{classrt_1_1GUI_adba05b4a3b267c9a281e4d280e016a44}{manage\_event}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classrt_1_1GUI_a196b6a2ebc5903d63f16e2167360a6b8}{runPage}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ std::shared\_ptr<sf::RenderWindow>\ \_window;}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ std::map<std::string,\ std::unique\_ptr<IPage>>\ \_pages;}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ std::string\ \_currentPage;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44f}{Event}}\ \_myEvent;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structrt_1_1GameData}{GameData}}\ \&\_data;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ sf::Event\ \_event;}
+\DoxyCodeLine{00035\ \ \ \ \ \};}
+\DoxyCodeLine{00036\ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

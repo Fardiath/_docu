@@ -1,0 +1,163 @@
+\hypertarget{classserver_1_1Network}{}\doxysection{server\+::Network Class Reference}
+\label{classserver_1_1Network}\index{server::Network@{server::Network}}
+
+
+create \mbox{\hyperlink{classserver_1_1Network}{Network}} class  
+
+
+
+
+{\ttfamily \#include $<$server.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classserver_1_1Network_a3c9666b6aae3d56d4d18c548a0458dd3}{Network}} (boost\+::asio\+::io\+\_\+service \&io\+\_\+service, int port)
+\item 
+void \mbox{\hyperlink{classserver_1_1Network_ae8767ba89bfd336fff731e5e62dc21c1}{Game\+Loop}} ()
+\item 
+void \mbox{\hyperlink{classserver_1_1Network_abd582eb8625fc26bc09ad5c1abdf237c}{manage\+Client}} (std\+::string message)
+\item 
+int \mbox{\hyperlink{classserver_1_1Network_a634a43f2ee67f263b36a694db580dc05}{get\+Numberof\+Client}} () const
+\item 
+int \mbox{\hyperlink{classserver_1_1Network_a41081fa994b7c03ceb6358f09d476419}{get\+Entity\+ID}} () const
+\item 
+void \mbox{\hyperlink{classserver_1_1Network_ac73a7a8f8f30a542b9affbd8355d2ce7}{add\+Entity}} (int x)
+\item 
+void \mbox{\hyperlink{classserver_1_1Network_a4c7a8ac6aedd7147b424e47420ce1b99}{move\+Ennemies}} ()
+\item 
+void \mbox{\hyperlink{classserver_1_1Network_ab2aff71fcbb72aa8bc4ef0135f480172}{check\+Ennemy\+Death}} (void)
+\item 
+void \mbox{\hyperlink{classserver_1_1Network_ab68479f03e453fb39944188d44e201d5}{Delete\+Monsters}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classgame_1_1IMonster}{game\+::\+IMonster}} $>$ \&monster)
+\item 
+void \mbox{\hyperlink{classserver_1_1Network_ab3fdca9f475ad01797d9cadb0c71e23c}{set\+Number\+Of\+Client}} (int x)
+\item 
+std\+::vector$<$ boost\+::asio\+::ip\+::udp\+::endpoint $>$ \mbox{\hyperlink{classserver_1_1Network_a56e1ac7603f89b40d41d7517c4e6940f}{get\+Client\+Endpoints}} () const
+\item 
+void \mbox{\hyperlink{classserver_1_1Network_a0daf1ba25818db3770392204f122c89c}{handle\+Send\+Message}} (std\+::string message, const boost\+::system\+::error\+\_\+code \&error, std\+::size\+\_\+t bytes)
+\item 
+\mbox{\hyperlink{classserver_1_1Network_a7a4e19cdb4bf0c7ecf82baa643831492}{$\sim$\+Network}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classserver_1_1Network_a0c027abe6d5f68fcab6e511e47009bf2}{is\+In\+Game}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classgame_1_1player}{player}} $>$ \mbox{\hyperlink{classserver_1_1Network_a3713556e40979c6025d574d075f06e13}{\+\_\+players}}
+\item 
+boost\+::asio\+::ip\+::udp\+::socket \mbox{\hyperlink{classserver_1_1Network_a1fda2918fd9979d31bb7ba9eb480b53e}{server\+\_\+socket}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+create \mbox{\hyperlink{classserver_1_1Network}{Network}} class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classserver_1_1Network_a3c9666b6aae3d56d4d18c548a0458dd3}\label{classserver_1_1Network_a3c9666b6aae3d56d4d18c548a0458dd3}} 
+\index{server::Network@{server::Network}!Network@{Network}}
+\index{Network@{Network}!server::Network@{server::Network}}
+\doxysubsubsection{\texorpdfstring{Network()}{Network()}}
+{\footnotesize\ttfamily Network\+::\+Network (\begin{DoxyParamCaption}\item[{boost\+::asio\+::io\+\_\+service \&}]{io\+\_\+service,  }\item[{int}]{port }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Network_a7a4e19cdb4bf0c7ecf82baa643831492}\label{classserver_1_1Network_a7a4e19cdb4bf0c7ecf82baa643831492}} 
+\index{server::Network@{server::Network}!````~Network@{$\sim$Network}}
+\index{````~Network@{$\sim$Network}!server::Network@{server::Network}}
+\doxysubsubsection{\texorpdfstring{$\sim$Network()}{~Network()}}
+{\footnotesize\ttfamily Network\+::$\sim$\+Network (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classserver_1_1Network_ac73a7a8f8f30a542b9affbd8355d2ce7}\label{classserver_1_1Network_ac73a7a8f8f30a542b9affbd8355d2ce7}} 
+\index{server::Network@{server::Network}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!server::Network@{server::Network}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily void Network\+::add\+Entity (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Network_ab2aff71fcbb72aa8bc4ef0135f480172}\label{classserver_1_1Network_ab2aff71fcbb72aa8bc4ef0135f480172}} 
+\index{server::Network@{server::Network}!checkEnnemyDeath@{checkEnnemyDeath}}
+\index{checkEnnemyDeath@{checkEnnemyDeath}!server::Network@{server::Network}}
+\doxysubsubsection{\texorpdfstring{checkEnnemyDeath()}{checkEnnemyDeath()}}
+{\footnotesize\ttfamily void Network\+::check\+Ennemy\+Death (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Network_ab68479f03e453fb39944188d44e201d5}\label{classserver_1_1Network_ab68479f03e453fb39944188d44e201d5}} 
+\index{server::Network@{server::Network}!DeleteMonsters@{DeleteMonsters}}
+\index{DeleteMonsters@{DeleteMonsters}!server::Network@{server::Network}}
+\doxysubsubsection{\texorpdfstring{DeleteMonsters()}{DeleteMonsters()}}
+{\footnotesize\ttfamily void Network\+::\+Delete\+Monsters (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classgame_1_1IMonster}{game\+::\+IMonster}} $>$ \&}]{monster }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Network_ae8767ba89bfd336fff731e5e62dc21c1}\label{classserver_1_1Network_ae8767ba89bfd336fff731e5e62dc21c1}} 
+\index{server::Network@{server::Network}!GameLoop@{GameLoop}}
+\index{GameLoop@{GameLoop}!server::Network@{server::Network}}
+\doxysubsubsection{\texorpdfstring{GameLoop()}{GameLoop()}}
+{\footnotesize\ttfamily void Network\+::\+Game\+Loop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Network_a56e1ac7603f89b40d41d7517c4e6940f}\label{classserver_1_1Network_a56e1ac7603f89b40d41d7517c4e6940f}} 
+\index{server::Network@{server::Network}!getClientEndpoints@{getClientEndpoints}}
+\index{getClientEndpoints@{getClientEndpoints}!server::Network@{server::Network}}
+\doxysubsubsection{\texorpdfstring{getClientEndpoints()}{getClientEndpoints()}}
+{\footnotesize\ttfamily std\+::vector$<$ boost\+::asio\+::ip\+::udp\+::endpoint $>$ Network\+::get\+Client\+Endpoints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classserver_1_1Network_a41081fa994b7c03ceb6358f09d476419}\label{classserver_1_1Network_a41081fa994b7c03ceb6358f09d476419}} 
+\index{server::Network@{server::Network}!getEntityID@{getEntityID}}
+\index{getEntityID@{getEntityID}!server::Network@{server::Network}}
+\doxysubsubsection{\texorpdfstring{getEntityID()}{getEntityID()}}
+{\footnotesize\ttfamily int Network\+::get\+Entity\+ID (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classserver_1_1Network_a634a43f2ee67f263b36a694db580dc05}\label{classserver_1_1Network_a634a43f2ee67f263b36a694db580dc05}} 
+\index{server::Network@{server::Network}!getNumberofClient@{getNumberofClient}}
+\index{getNumberofClient@{getNumberofClient}!server::Network@{server::Network}}
+\doxysubsubsection{\texorpdfstring{getNumberofClient()}{getNumberofClient()}}
+{\footnotesize\ttfamily int Network\+::get\+Numberof\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classserver_1_1Network_a0daf1ba25818db3770392204f122c89c}\label{classserver_1_1Network_a0daf1ba25818db3770392204f122c89c}} 
+\index{server::Network@{server::Network}!handleSendMessage@{handleSendMessage}}
+\index{handleSendMessage@{handleSendMessage}!server::Network@{server::Network}}
+\doxysubsubsection{\texorpdfstring{handleSendMessage()}{handleSendMessage()}}
+{\footnotesize\ttfamily void Network\+::handle\+Send\+Message (\begin{DoxyParamCaption}\item[{std\+::string}]{message,  }\item[{const boost\+::system\+::error\+\_\+code \&}]{error,  }\item[{std\+::size\+\_\+t}]{bytes }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Network_abd582eb8625fc26bc09ad5c1abdf237c}\label{classserver_1_1Network_abd582eb8625fc26bc09ad5c1abdf237c}} 
+\index{server::Network@{server::Network}!manageClient@{manageClient}}
+\index{manageClient@{manageClient}!server::Network@{server::Network}}
+\doxysubsubsection{\texorpdfstring{manageClient()}{manageClient()}}
+{\footnotesize\ttfamily void Network\+::manage\+Client (\begin{DoxyParamCaption}\item[{std\+::string}]{message }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Network_a4c7a8ac6aedd7147b424e47420ce1b99}\label{classserver_1_1Network_a4c7a8ac6aedd7147b424e47420ce1b99}} 
+\index{server::Network@{server::Network}!moveEnnemies@{moveEnnemies}}
+\index{moveEnnemies@{moveEnnemies}!server::Network@{server::Network}}
+\doxysubsubsection{\texorpdfstring{moveEnnemies()}{moveEnnemies()}}
+{\footnotesize\ttfamily void Network\+::move\+Ennemies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Network_ab3fdca9f475ad01797d9cadb0c71e23c}\label{classserver_1_1Network_ab3fdca9f475ad01797d9cadb0c71e23c}} 
+\index{server::Network@{server::Network}!setNumberOfClient@{setNumberOfClient}}
+\index{setNumberOfClient@{setNumberOfClient}!server::Network@{server::Network}}
+\doxysubsubsection{\texorpdfstring{setNumberOfClient()}{setNumberOfClient()}}
+{\footnotesize\ttfamily void Network\+::set\+Number\+Of\+Client (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classserver_1_1Network_a3713556e40979c6025d574d075f06e13}\label{classserver_1_1Network_a3713556e40979c6025d574d075f06e13}} 
+\index{server::Network@{server::Network}!\_players@{\_players}}
+\index{\_players@{\_players}!server::Network@{server::Network}}
+\doxysubsubsection{\texorpdfstring{\_players}{\_players}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classgame_1_1player}{player}}$>$ server\+::\+Network\+::\+\_\+players}
+
+\mbox{\Hypertarget{classserver_1_1Network_a0c027abe6d5f68fcab6e511e47009bf2}\label{classserver_1_1Network_a0c027abe6d5f68fcab6e511e47009bf2}} 
+\index{server::Network@{server::Network}!isInGame@{isInGame}}
+\index{isInGame@{isInGame}!server::Network@{server::Network}}
+\doxysubsubsection{\texorpdfstring{isInGame}{isInGame}}
+{\footnotesize\ttfamily bool server\+::\+Network\+::is\+In\+Game}
+
+\mbox{\Hypertarget{classserver_1_1Network_a1fda2918fd9979d31bb7ba9eb480b53e}\label{classserver_1_1Network_a1fda2918fd9979d31bb7ba9eb480b53e}} 
+\index{server::Network@{server::Network}!server\_socket@{server\_socket}}
+\index{server\_socket@{server\_socket}!server::Network@{server::Network}}
+\doxysubsubsection{\texorpdfstring{server\_socket}{server\_socket}}
+{\footnotesize\ttfamily boost\+::asio\+::ip\+::udp\+::socket server\+::\+Network\+::server\+\_\+socket}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+server/include/\mbox{\hyperlink{server_8hpp}{server.\+hpp}}\item 
+server/source/\mbox{\hyperlink{network_8cpp}{network.\+cpp}}\end{DoxyCompactItemize}

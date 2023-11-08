@@ -1,0 +1,189 @@
+\hypertarget{classserver_1_1Communication_1_1tools}{}\doxysection{server\+::Communication\+::tools Class Reference}
+\label{classserver_1_1Communication_1_1tools}\index{server::Communication::tools@{server::Communication::tools}}
+
+
+{\ttfamily \#include $<$server.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classserver_1_1Communication_1_1tools_ab7c047cd179275c5503fd4d90b7472b3}{tools}} ()
+\item 
+\mbox{\hyperlink{classserver_1_1Communication_1_1tools_aac4c343ca58ae22b7be26faa14565c6a}{$\sim$tools}} ()
+\item 
+std\+::string \mbox{\hyperlink{classserver_1_1Communication_1_1tools_a028c773e6261405648a0f0d4467af914}{pack\+Message}} (std\+::string message)
+\item 
+void \mbox{\hyperlink{classserver_1_1Communication_1_1tools_a00bfb65c576d31f944babf4c9c0ff654}{check\+Request}} (std\+::string request, \mbox{\hyperlink{classserver_1_1Network}{Network}} \&net, boost\+::asio\+::ip\+::udp\+::endpoint endpoint)
+\item 
+bool \mbox{\hyperlink{classserver_1_1Communication_1_1tools_ae160bf270689c977848584869c21601a}{is\+Request}} (std\+::string request)
+\item 
+void \mbox{\hyperlink{classserver_1_1Communication_1_1tools_a0d370cdc13372994ec1dfaf0a7d6f3c8}{treat\+Request}} (std\+::vector$<$ std\+::string $>$ request, \mbox{\hyperlink{classserver_1_1Network}{Network}} \&net, boost\+::asio\+::ip\+::udp\+::endpoint endpoint)
+\item 
+void \mbox{\hyperlink{classserver_1_1Communication_1_1tools_ae24d0a26bce5fedabf90bb4fe998c03d}{Connect\+Request}} (std\+::vector$<$ std\+::string $>$ cmds, \mbox{\hyperlink{classserver_1_1Network}{Network}} \&net, boost\+::asio\+::ip\+::udp\+::endpoint endpoint)
+\item 
+void \mbox{\hyperlink{classserver_1_1Communication_1_1tools_aed01ac99fee8f8d545d7a4e53fd73a9d}{players\+Request}} (std\+::vector$<$ std\+::string $>$ cmds, \mbox{\hyperlink{classserver_1_1Network}{Network}} \&net, boost\+::asio\+::ip\+::udp\+::endpoint endpoint)
+\item 
+void \mbox{\hyperlink{classserver_1_1Communication_1_1tools_ae8dec36e14b3838f6671954a9198c72d}{move\+Request}} (std\+::vector$<$ std\+::string $>$ cmds, \mbox{\hyperlink{classserver_1_1Network}{Network}} \&net, boost\+::asio\+::ip\+::udp\+::endpoint endpoint)
+\item 
+void \mbox{\hyperlink{classserver_1_1Communication_1_1tools_ae36bf283ff94113737a464023ce28427}{send\+Ennemies\+Pos}} (std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classgame_1_1IMonster}{game\+::\+IMonster}} $>$ $>$ \&Monsters, \mbox{\hyperlink{classserver_1_1Network}{Network}} \&net)
+\item 
+void \mbox{\hyperlink{classserver_1_1Communication_1_1tools_a5b36dc4805c0ce9ce1f8a4e94d947492}{send\+Dead\+Ennemies}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classgame_1_1IMonster}{game\+::\+IMonster}} $>$ \&monster, \mbox{\hyperlink{classserver_1_1Network}{Network}} \&net)
+\item 
+std\+::string \mbox{\hyperlink{classserver_1_1Communication_1_1tools_a60f76b24ebc8c978f80b375a72c1a554}{give\+Position}} (double x, double y, \mbox{\hyperlink{classserver_1_1Network}{Network}} \&net, boost\+::asio\+::ip\+::udp\+::endpoint endpointm, std\+::vector$<$ \mbox{\hyperlink{classgame_1_1player}{player}} $>$ \&players)
+\item 
+std\+::string \mbox{\hyperlink{classserver_1_1Communication_1_1tools_a28bef648077f670de0142e1748309fc5}{pack\+Connected}} (int x, int y, int color)
+\item 
+bool \mbox{\hyperlink{classserver_1_1Communication_1_1tools_abcb644eb42f6fb3c60df61ec25972ac1}{is\+\_\+\+Client\+Endpoint}} (boost\+::asio\+::ip\+::udp\+::endpoint other\+Enpoint, std\+::vector$<$ boost\+::asio\+::ip\+::udp\+::endpoint $>$ Endpoints)
+\item 
+void \mbox{\hyperlink{classserver_1_1Communication_1_1tools_af790b82a6d7ac2c4914de6bb6af4652a}{move\+Player\+In\+Down}} (boost\+::asio\+::ip\+::udp\+::endpoint endpoint, std\+::vector$<$ \mbox{\hyperlink{classgame_1_1player}{player}} $>$ \&players, \mbox{\hyperlink{classserver_1_1Network}{Network}} \&net)
+\item 
+void \mbox{\hyperlink{classserver_1_1Communication_1_1tools_a37771031399f9c66c9c22b331bc6c193}{move\+Player\+In\+Up}} (boost\+::asio\+::ip\+::udp\+::endpoint endpoint, std\+::vector$<$ \mbox{\hyperlink{classgame_1_1player}{player}} $>$ \&players, \mbox{\hyperlink{classserver_1_1Network}{Network}} \&net)
+\item 
+void \mbox{\hyperlink{classserver_1_1Communication_1_1tools_a2e70af5f421c2be21719901989ec2de9}{move\+Player\+In\+Left}} (boost\+::asio\+::ip\+::udp\+::endpoint endpoint, std\+::vector$<$ \mbox{\hyperlink{classgame_1_1player}{player}} $>$ \&players, \mbox{\hyperlink{classserver_1_1Network}{Network}} \&net)
+\item 
+void \mbox{\hyperlink{classserver_1_1Communication_1_1tools_afff780a6c4be1b201dbac2b0e5e30426}{move\+Player\+In\+Right}} (boost\+::asio\+::ip\+::udp\+::endpoint endpoint, std\+::vector$<$ \mbox{\hyperlink{classgame_1_1player}{player}} $>$ \&players, \mbox{\hyperlink{classserver_1_1Network}{Network}} \&net)
+\item 
+void \mbox{\hyperlink{classserver_1_1Communication_1_1tools_ad474232f2dca35f1f478802bfb97b7e3}{notifyto\+Clients}} (boost\+::asio\+::ip\+::udp\+::socket \&server\+Socket, std\+::string message, std\+::vector$<$ boost\+::asio\+::ip\+::udp\+::endpoint $>$ endpoints)
+\item 
+bool \mbox{\hyperlink{classserver_1_1Communication_1_1tools_a5e194196bcc965527ca72c1cd45c4b7b}{is\+\_\+\+Connected}} (std\+::string name, std\+::vector$<$ \mbox{\hyperlink{classgame_1_1player}{player}} $>$ players)
+\item 
+void \mbox{\hyperlink{classserver_1_1Communication_1_1tools_a58b1f55e0b706c74143be820f363b4c8}{Write\+Message}} (std\+::string Message, boost\+::asio\+::ip\+::udp\+::socket \&server\+Socket, boost\+::asio\+::ip\+::udp\+::endpoint endpoint)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_ab7c047cd179275c5503fd4d90b7472b3}\label{classserver_1_1Communication_1_1tools_ab7c047cd179275c5503fd4d90b7472b3}} 
+\index{server::Communication::tools@{server::Communication::tools}!tools@{tools}}
+\index{tools@{tools}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{tools()}{tools()}}
+{\footnotesize\ttfamily server\+::\+Communication\+::tools\+::tools (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_aac4c343ca58ae22b7be26faa14565c6a}\label{classserver_1_1Communication_1_1tools_aac4c343ca58ae22b7be26faa14565c6a}} 
+\index{server::Communication::tools@{server::Communication::tools}!````~tools@{$\sim$tools}}
+\index{````~tools@{$\sim$tools}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{$\sim$tools()}{~tools()}}
+{\footnotesize\ttfamily server\+::\+Communication\+::tools\+::$\sim$tools (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_a00bfb65c576d31f944babf4c9c0ff654}\label{classserver_1_1Communication_1_1tools_a00bfb65c576d31f944babf4c9c0ff654}} 
+\index{server::Communication::tools@{server::Communication::tools}!checkRequest@{checkRequest}}
+\index{checkRequest@{checkRequest}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{checkRequest()}{checkRequest()}}
+{\footnotesize\ttfamily void server\+::\+Communication\+::tools\+::check\+Request (\begin{DoxyParamCaption}\item[{std\+::string}]{request,  }\item[{\mbox{\hyperlink{classserver_1_1Network}{Network}} \&}]{net,  }\item[{boost\+::asio\+::ip\+::udp\+::endpoint}]{endpoint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_ae24d0a26bce5fedabf90bb4fe998c03d}\label{classserver_1_1Communication_1_1tools_ae24d0a26bce5fedabf90bb4fe998c03d}} 
+\index{server::Communication::tools@{server::Communication::tools}!ConnectRequest@{ConnectRequest}}
+\index{ConnectRequest@{ConnectRequest}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{ConnectRequest()}{ConnectRequest()}}
+{\footnotesize\ttfamily void server\+::\+Communication\+::tools\+::\+Connect\+Request (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{cmds,  }\item[{\mbox{\hyperlink{classserver_1_1Network}{Network}} \&}]{net,  }\item[{boost\+::asio\+::ip\+::udp\+::endpoint}]{endpoint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_a60f76b24ebc8c978f80b375a72c1a554}\label{classserver_1_1Communication_1_1tools_a60f76b24ebc8c978f80b375a72c1a554}} 
+\index{server::Communication::tools@{server::Communication::tools}!givePosition@{givePosition}}
+\index{givePosition@{givePosition}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{givePosition()}{givePosition()}}
+{\footnotesize\ttfamily std\+::string server\+::\+Communication\+::tools\+::give\+Position (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{\mbox{\hyperlink{classserver_1_1Network}{Network}} \&}]{net,  }\item[{boost\+::asio\+::ip\+::udp\+::endpoint}]{endpointm,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classgame_1_1player}{player}} $>$ \&}]{players }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_abcb644eb42f6fb3c60df61ec25972ac1}\label{classserver_1_1Communication_1_1tools_abcb644eb42f6fb3c60df61ec25972ac1}} 
+\index{server::Communication::tools@{server::Communication::tools}!is\_ClientEndpoint@{is\_ClientEndpoint}}
+\index{is\_ClientEndpoint@{is\_ClientEndpoint}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{is\_ClientEndpoint()}{is\_ClientEndpoint()}}
+{\footnotesize\ttfamily bool server\+::\+Communication\+::tools\+::is\+\_\+\+Client\+Endpoint (\begin{DoxyParamCaption}\item[{boost\+::asio\+::ip\+::udp\+::endpoint}]{other\+Enpoint,  }\item[{std\+::vector$<$ boost\+::asio\+::ip\+::udp\+::endpoint $>$}]{Endpoints }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_a5e194196bcc965527ca72c1cd45c4b7b}\label{classserver_1_1Communication_1_1tools_a5e194196bcc965527ca72c1cd45c4b7b}} 
+\index{server::Communication::tools@{server::Communication::tools}!is\_Connected@{is\_Connected}}
+\index{is\_Connected@{is\_Connected}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{is\_Connected()}{is\_Connected()}}
+{\footnotesize\ttfamily bool server\+::\+Communication\+::tools\+::is\+\_\+\+Connected (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classgame_1_1player}{player}} $>$}]{players }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_ae160bf270689c977848584869c21601a}\label{classserver_1_1Communication_1_1tools_ae160bf270689c977848584869c21601a}} 
+\index{server::Communication::tools@{server::Communication::tools}!isRequest@{isRequest}}
+\index{isRequest@{isRequest}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{isRequest()}{isRequest()}}
+{\footnotesize\ttfamily bool server\+::\+Communication\+::tools\+::is\+Request (\begin{DoxyParamCaption}\item[{std\+::string}]{request }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_af790b82a6d7ac2c4914de6bb6af4652a}\label{classserver_1_1Communication_1_1tools_af790b82a6d7ac2c4914de6bb6af4652a}} 
+\index{server::Communication::tools@{server::Communication::tools}!movePlayerInDown@{movePlayerInDown}}
+\index{movePlayerInDown@{movePlayerInDown}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{movePlayerInDown()}{movePlayerInDown()}}
+{\footnotesize\ttfamily void server\+::\+Communication\+::tools\+::move\+Player\+In\+Down (\begin{DoxyParamCaption}\item[{boost\+::asio\+::ip\+::udp\+::endpoint}]{endpoint,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classgame_1_1player}{player}} $>$ \&}]{players,  }\item[{\mbox{\hyperlink{classserver_1_1Network}{Network}} \&}]{net }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_a2e70af5f421c2be21719901989ec2de9}\label{classserver_1_1Communication_1_1tools_a2e70af5f421c2be21719901989ec2de9}} 
+\index{server::Communication::tools@{server::Communication::tools}!movePlayerInLeft@{movePlayerInLeft}}
+\index{movePlayerInLeft@{movePlayerInLeft}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{movePlayerInLeft()}{movePlayerInLeft()}}
+{\footnotesize\ttfamily void server\+::\+Communication\+::tools\+::move\+Player\+In\+Left (\begin{DoxyParamCaption}\item[{boost\+::asio\+::ip\+::udp\+::endpoint}]{endpoint,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classgame_1_1player}{player}} $>$ \&}]{players,  }\item[{\mbox{\hyperlink{classserver_1_1Network}{Network}} \&}]{net }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_afff780a6c4be1b201dbac2b0e5e30426}\label{classserver_1_1Communication_1_1tools_afff780a6c4be1b201dbac2b0e5e30426}} 
+\index{server::Communication::tools@{server::Communication::tools}!movePlayerInRight@{movePlayerInRight}}
+\index{movePlayerInRight@{movePlayerInRight}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{movePlayerInRight()}{movePlayerInRight()}}
+{\footnotesize\ttfamily void server\+::\+Communication\+::tools\+::move\+Player\+In\+Right (\begin{DoxyParamCaption}\item[{boost\+::asio\+::ip\+::udp\+::endpoint}]{endpoint,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classgame_1_1player}{player}} $>$ \&}]{players,  }\item[{\mbox{\hyperlink{classserver_1_1Network}{Network}} \&}]{net }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_a37771031399f9c66c9c22b331bc6c193}\label{classserver_1_1Communication_1_1tools_a37771031399f9c66c9c22b331bc6c193}} 
+\index{server::Communication::tools@{server::Communication::tools}!movePlayerInUp@{movePlayerInUp}}
+\index{movePlayerInUp@{movePlayerInUp}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{movePlayerInUp()}{movePlayerInUp()}}
+{\footnotesize\ttfamily void server\+::\+Communication\+::tools\+::move\+Player\+In\+Up (\begin{DoxyParamCaption}\item[{boost\+::asio\+::ip\+::udp\+::endpoint}]{endpoint,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classgame_1_1player}{player}} $>$ \&}]{players,  }\item[{\mbox{\hyperlink{classserver_1_1Network}{Network}} \&}]{net }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_ae8dec36e14b3838f6671954a9198c72d}\label{classserver_1_1Communication_1_1tools_ae8dec36e14b3838f6671954a9198c72d}} 
+\index{server::Communication::tools@{server::Communication::tools}!moveRequest@{moveRequest}}
+\index{moveRequest@{moveRequest}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{moveRequest()}{moveRequest()}}
+{\footnotesize\ttfamily void server\+::\+Communication\+::tools\+::move\+Request (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{cmds,  }\item[{\mbox{\hyperlink{classserver_1_1Network}{Network}} \&}]{net,  }\item[{boost\+::asio\+::ip\+::udp\+::endpoint}]{endpoint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_ad474232f2dca35f1f478802bfb97b7e3}\label{classserver_1_1Communication_1_1tools_ad474232f2dca35f1f478802bfb97b7e3}} 
+\index{server::Communication::tools@{server::Communication::tools}!notifytoClients@{notifytoClients}}
+\index{notifytoClients@{notifytoClients}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{notifytoClients()}{notifytoClients()}}
+{\footnotesize\ttfamily void server\+::\+Communication\+::tools\+::notifyto\+Clients (\begin{DoxyParamCaption}\item[{boost\+::asio\+::ip\+::udp\+::socket \&}]{server\+Socket,  }\item[{std\+::string}]{message,  }\item[{std\+::vector$<$ boost\+::asio\+::ip\+::udp\+::endpoint $>$}]{endpoints }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_a28bef648077f670de0142e1748309fc5}\label{classserver_1_1Communication_1_1tools_a28bef648077f670de0142e1748309fc5}} 
+\index{server::Communication::tools@{server::Communication::tools}!packConnected@{packConnected}}
+\index{packConnected@{packConnected}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{packConnected()}{packConnected()}}
+{\footnotesize\ttfamily std\+::string server\+::\+Communication\+::tools\+::pack\+Connected (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_a028c773e6261405648a0f0d4467af914}\label{classserver_1_1Communication_1_1tools_a028c773e6261405648a0f0d4467af914}} 
+\index{server::Communication::tools@{server::Communication::tools}!packMessage@{packMessage}}
+\index{packMessage@{packMessage}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{packMessage()}{packMessage()}}
+{\footnotesize\ttfamily std\+::string server\+::\+Communication\+::tools\+::pack\+Message (\begin{DoxyParamCaption}\item[{std\+::string}]{message }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_aed01ac99fee8f8d545d7a4e53fd73a9d}\label{classserver_1_1Communication_1_1tools_aed01ac99fee8f8d545d7a4e53fd73a9d}} 
+\index{server::Communication::tools@{server::Communication::tools}!playersRequest@{playersRequest}}
+\index{playersRequest@{playersRequest}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{playersRequest()}{playersRequest()}}
+{\footnotesize\ttfamily void server\+::\+Communication\+::tools\+::players\+Request (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{cmds,  }\item[{\mbox{\hyperlink{classserver_1_1Network}{Network}} \&}]{net,  }\item[{boost\+::asio\+::ip\+::udp\+::endpoint}]{endpoint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_a5b36dc4805c0ce9ce1f8a4e94d947492}\label{classserver_1_1Communication_1_1tools_a5b36dc4805c0ce9ce1f8a4e94d947492}} 
+\index{server::Communication::tools@{server::Communication::tools}!sendDeadEnnemies@{sendDeadEnnemies}}
+\index{sendDeadEnnemies@{sendDeadEnnemies}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{sendDeadEnnemies()}{sendDeadEnnemies()}}
+{\footnotesize\ttfamily void server\+::\+Communication\+::tools\+::send\+Dead\+Ennemies (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classgame_1_1IMonster}{game\+::\+IMonster}} $>$ \&}]{monster,  }\item[{\mbox{\hyperlink{classserver_1_1Network}{Network}} \&}]{net }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_ae36bf283ff94113737a464023ce28427}\label{classserver_1_1Communication_1_1tools_ae36bf283ff94113737a464023ce28427}} 
+\index{server::Communication::tools@{server::Communication::tools}!sendEnnemiesPos@{sendEnnemiesPos}}
+\index{sendEnnemiesPos@{sendEnnemiesPos}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{sendEnnemiesPos()}{sendEnnemiesPos()}}
+{\footnotesize\ttfamily void server\+::\+Communication\+::tools\+::send\+Ennemies\+Pos (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classgame_1_1IMonster}{game\+::\+IMonster}} $>$ $>$ \&}]{Monsters,  }\item[{\mbox{\hyperlink{classserver_1_1Network}{Network}} \&}]{net }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_a0d370cdc13372994ec1dfaf0a7d6f3c8}\label{classserver_1_1Communication_1_1tools_a0d370cdc13372994ec1dfaf0a7d6f3c8}} 
+\index{server::Communication::tools@{server::Communication::tools}!treatRequest@{treatRequest}}
+\index{treatRequest@{treatRequest}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{treatRequest()}{treatRequest()}}
+{\footnotesize\ttfamily void server\+::\+Communication\+::tools\+::treat\+Request (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{request,  }\item[{\mbox{\hyperlink{classserver_1_1Network}{Network}} \&}]{net,  }\item[{boost\+::asio\+::ip\+::udp\+::endpoint}]{endpoint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classserver_1_1Communication_1_1tools_a58b1f55e0b706c74143be820f363b4c8}\label{classserver_1_1Communication_1_1tools_a58b1f55e0b706c74143be820f363b4c8}} 
+\index{server::Communication::tools@{server::Communication::tools}!WriteMessage@{WriteMessage}}
+\index{WriteMessage@{WriteMessage}!server::Communication::tools@{server::Communication::tools}}
+\doxysubsubsection{\texorpdfstring{WriteMessage()}{WriteMessage()}}
+{\footnotesize\ttfamily void server\+::\+Communication\+::tools\+::\+Write\+Message (\begin{DoxyParamCaption}\item[{std\+::string}]{Message,  }\item[{boost\+::asio\+::ip\+::udp\+::socket \&}]{server\+Socket,  }\item[{boost\+::asio\+::ip\+::udp\+::endpoint}]{endpoint }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+server/include/\mbox{\hyperlink{server_8hpp}{server.\+hpp}}\item 
+server/source/\mbox{\hyperlink{communication_8cpp}{communication.\+cpp}}\end{DoxyCompactItemize}

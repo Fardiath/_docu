@@ -1,0 +1,70 @@
+\hypertarget{tools_8hpp_source}{}\doxysection{tools.\+hpp}
+\label{tools_8hpp_source}\index{server/include/tools.hpp@{server/include/tools.hpp}}
+\mbox{\hyperlink{tools_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ server}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ tools}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ TOOLS\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ TOOLS\_HPP\_}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{lib_8hpp}{./lib.hpp}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{game_8hpp}{game.hpp}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ namespace\ }\mbox{\hyperlink{namespacegame}{game}};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacetools}{tools}}\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classtools_1_1SafeQueue}{SafeQueue}}\{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtools_1_1SafeQueue_a3e9b53f4c8f192b32b998c93d3d7b3f1}{SafeQueue}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtools_1_1SafeQueue_a8a49c3c9e29dc7a1164dc07cab8bcd49}{\string~SafeQueue}}();}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtools_1_1SafeQueue_a3e9b53f4c8f192b32b998c93d3d7b3f1}{SafeQueue}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classtools_1_1SafeQueue}{SafeQueue}}\ \&other);}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classtools_1_1SafeQueue_a86c1833959234f143593bb871e16fcbd}{push}}(std::string\ task);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classtools_1_1SafeQueue_a6eb5fc6d6da58a8b1ed2b141789691ce}{is\_empty}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classtools_1_1SafeQueue_af5dbdcaa7fba1e881f10fdee12e3447b}{pop}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ std::mutex\ mut;}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ std::condition\_variable\ sem;}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<std::string>\ vector;}
+\DoxyCodeLine{00032\ \ \ \ \ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classtools_1_1ThreadPoolPlayer}{ThreadPoolPlayer}}\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtools_1_1ThreadPoolPlayer_ae6a255bf227e29c89af40746332050d6}{ThreadPoolPlayer}}();}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtools_1_1ThreadPoolPlayer_abfca7a2ee93684d8855f5459bc6415da}{\string~ThreadPoolPlayer}}();}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classtools_1_1ThreadPoolPlayer_a4f2c08de4b911cc0949086e4e1e2790d}{addThread}}(boost::asio::ip::udp::endpoint\ endpoint,\ boost::asio::ip::udp::socket\ \&serverSocket);}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classtools_1_1ThreadPoolPlayer_ac22ff78d74cd8a8750d6c90d1bc3ba4a}{addRequest}}(std::string\ task,\ boost::asio::ip::udp::endpoint\ endpoint);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classtools_1_1ThreadPoolPlayer_a544db2abf281cb7df611f792d2122100}{getThreadTask}}(boost::asio::ip::udp::endpoint\ endpoint);}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classtools_1_1ThreadPoolPlayer_a9a7e1fc255f70b4441f19042ba7e669d}{TreatRequest}}(\mbox{\hyperlink{classtools_1_1SafeQueue}{SafeQueue}}\ \&threadTask,\ boost::asio::ip::udp::socket\ \&serverSocket,}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ boost::asio::ip::udp::endpoint\ clientEndpoint);}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//boost::asio::ip::udp::socket\ serverSocket;}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<std::thread>\ PlayerThread;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ handleSendMessage(std::string\ message\ ,\textcolor{keyword}{const}\ boost::system::error\_code\&\ error,\ std::size\_t\ bytes);}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ std::thread\ refillers;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtools_1_1SafeQueue}{SafeQueue}}\ task;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<tools::SafeQueue>\ tasks;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ std::mutex\ mut;}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<boost::asio::ip::udp::endpoint>\ endpoints;}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isfunctionnal;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ number;}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_working;}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<std::tuple<boost::asio::ip::udp::endpoint,\ tools::SafeQueue>>\ request;}
+\DoxyCodeLine{00056\ \ \ \ \ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classtools_1_1utils}{utils}}\ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classgame_1_1player}{player}}\ \mbox{\hyperlink{classtools_1_1utils_a49b59ee2b493dcd0560f5107a2ef2b7f}{getPlayerWithEndpoint}}(boost::asio::ip::udp::endpoint\ endpoint,\ std::vector<player>\ players);}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classtools_1_1utils_ab7bc70fd56ad3e037a80664c9df2926d}{timer}}(\textcolor{keywordtype}{int}\ seconds);}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00063\ \ \ \ \ \};}
+\DoxyCodeLine{00064\ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#endif\ \ }}
+
+\end{DoxyCode}

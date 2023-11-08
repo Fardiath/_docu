@@ -1,0 +1,69 @@
+\hypertarget{classtools_1_1ThreadPoolPlayer}{}\doxysection{tools\+::Thread\+Pool\+Player Class Reference}
+\label{classtools_1_1ThreadPoolPlayer}\index{tools::ThreadPoolPlayer@{tools::ThreadPoolPlayer}}
+
+
+{\ttfamily \#include $<$tools.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtools_1_1ThreadPoolPlayer_ae6a255bf227e29c89af40746332050d6}{Thread\+Pool\+Player}} ()
+\item 
+\mbox{\hyperlink{classtools_1_1ThreadPoolPlayer_abfca7a2ee93684d8855f5459bc6415da}{$\sim$\+Thread\+Pool\+Player}} ()
+\item 
+void \mbox{\hyperlink{classtools_1_1ThreadPoolPlayer_a4f2c08de4b911cc0949086e4e1e2790d}{add\+Thread}} (boost\+::asio\+::ip\+::udp\+::endpoint endpoint, boost\+::asio\+::ip\+::udp\+::socket \&server\+Socket)
+\item 
+void \mbox{\hyperlink{classtools_1_1ThreadPoolPlayer_ac22ff78d74cd8a8750d6c90d1bc3ba4a}{add\+Request}} (std\+::string task, boost\+::asio\+::ip\+::udp\+::endpoint endpoint)
+\item 
+int \mbox{\hyperlink{classtools_1_1ThreadPoolPlayer_a544db2abf281cb7df611f792d2122100}{get\+Thread\+Task}} (boost\+::asio\+::ip\+::udp\+::endpoint endpoint)
+\item 
+void \mbox{\hyperlink{classtools_1_1ThreadPoolPlayer_a9a7e1fc255f70b4441f19042ba7e669d}{Treat\+Request}} (\mbox{\hyperlink{classtools_1_1SafeQueue}{Safe\+Queue}} \&thread\+Task, boost\+::asio\+::ip\+::udp\+::socket \&server\+Socket, const boost\+::asio\+::ip\+::udp\+::endpoint client\+Endpoint)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtools_1_1ThreadPoolPlayer_ae6a255bf227e29c89af40746332050d6}\label{classtools_1_1ThreadPoolPlayer_ae6a255bf227e29c89af40746332050d6}} 
+\index{tools::ThreadPoolPlayer@{tools::ThreadPoolPlayer}!ThreadPoolPlayer@{ThreadPoolPlayer}}
+\index{ThreadPoolPlayer@{ThreadPoolPlayer}!tools::ThreadPoolPlayer@{tools::ThreadPoolPlayer}}
+\doxysubsubsection{\texorpdfstring{ThreadPoolPlayer()}{ThreadPoolPlayer()}}
+{\footnotesize\ttfamily Thread\+Pool\+Player\+::\+Thread\+Pool\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classtools_1_1ThreadPoolPlayer_abfca7a2ee93684d8855f5459bc6415da}\label{classtools_1_1ThreadPoolPlayer_abfca7a2ee93684d8855f5459bc6415da}} 
+\index{tools::ThreadPoolPlayer@{tools::ThreadPoolPlayer}!````~ThreadPoolPlayer@{$\sim$ThreadPoolPlayer}}
+\index{````~ThreadPoolPlayer@{$\sim$ThreadPoolPlayer}!tools::ThreadPoolPlayer@{tools::ThreadPoolPlayer}}
+\doxysubsubsection{\texorpdfstring{$\sim$ThreadPoolPlayer()}{~ThreadPoolPlayer()}}
+{\footnotesize\ttfamily Thread\+Pool\+Player\+::$\sim$\+Thread\+Pool\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtools_1_1ThreadPoolPlayer_ac22ff78d74cd8a8750d6c90d1bc3ba4a}\label{classtools_1_1ThreadPoolPlayer_ac22ff78d74cd8a8750d6c90d1bc3ba4a}} 
+\index{tools::ThreadPoolPlayer@{tools::ThreadPoolPlayer}!addRequest@{addRequest}}
+\index{addRequest@{addRequest}!tools::ThreadPoolPlayer@{tools::ThreadPoolPlayer}}
+\doxysubsubsection{\texorpdfstring{addRequest()}{addRequest()}}
+{\footnotesize\ttfamily void Thread\+Pool\+Player\+::add\+Request (\begin{DoxyParamCaption}\item[{std\+::string}]{task,  }\item[{boost\+::asio\+::ip\+::udp\+::endpoint}]{endpoint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classtools_1_1ThreadPoolPlayer_a4f2c08de4b911cc0949086e4e1e2790d}\label{classtools_1_1ThreadPoolPlayer_a4f2c08de4b911cc0949086e4e1e2790d}} 
+\index{tools::ThreadPoolPlayer@{tools::ThreadPoolPlayer}!addThread@{addThread}}
+\index{addThread@{addThread}!tools::ThreadPoolPlayer@{tools::ThreadPoolPlayer}}
+\doxysubsubsection{\texorpdfstring{addThread()}{addThread()}}
+{\footnotesize\ttfamily void Thread\+Pool\+Player\+::add\+Thread (\begin{DoxyParamCaption}\item[{boost\+::asio\+::ip\+::udp\+::endpoint}]{endpoint,  }\item[{boost\+::asio\+::ip\+::udp\+::socket \&}]{server\+Socket }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classtools_1_1ThreadPoolPlayer_a544db2abf281cb7df611f792d2122100}\label{classtools_1_1ThreadPoolPlayer_a544db2abf281cb7df611f792d2122100}} 
+\index{tools::ThreadPoolPlayer@{tools::ThreadPoolPlayer}!getThreadTask@{getThreadTask}}
+\index{getThreadTask@{getThreadTask}!tools::ThreadPoolPlayer@{tools::ThreadPoolPlayer}}
+\doxysubsubsection{\texorpdfstring{getThreadTask()}{getThreadTask()}}
+{\footnotesize\ttfamily int Thread\+Pool\+Player\+::get\+Thread\+Task (\begin{DoxyParamCaption}\item[{boost\+::asio\+::ip\+::udp\+::endpoint}]{endpoint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classtools_1_1ThreadPoolPlayer_a9a7e1fc255f70b4441f19042ba7e669d}\label{classtools_1_1ThreadPoolPlayer_a9a7e1fc255f70b4441f19042ba7e669d}} 
+\index{tools::ThreadPoolPlayer@{tools::ThreadPoolPlayer}!TreatRequest@{TreatRequest}}
+\index{TreatRequest@{TreatRequest}!tools::ThreadPoolPlayer@{tools::ThreadPoolPlayer}}
+\doxysubsubsection{\texorpdfstring{TreatRequest()}{TreatRequest()}}
+{\footnotesize\ttfamily void Thread\+Pool\+Player\+::\+Treat\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtools_1_1SafeQueue}{Safe\+Queue}} \&}]{thread\+Task,  }\item[{boost\+::asio\+::ip\+::udp\+::socket \&}]{server\+Socket,  }\item[{const boost\+::asio\+::ip\+::udp\+::endpoint}]{client\+Endpoint }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+server/include/\mbox{\hyperlink{tools_8hpp}{tools.\+hpp}}\item 
+server/source/\mbox{\hyperlink{ThreadPoolPlayer_8cpp}{Thread\+Pool\+Player.\+cpp}}\end{DoxyCompactItemize}

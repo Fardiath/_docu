@@ -1,0 +1,68 @@
+\hypertarget{PageGame_8hpp_source}{}\doxysection{Page\+Game.\+hpp}
+\label{PageGame_8hpp_source}\index{client/Graphic/include/PageGame.hpp@{client/Graphic/include/PageGame.hpp}}
+\mbox{\hyperlink{PageGame_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ Game.h}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Game}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ \_GAME\_PAGE\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ \_GAME\_PAGE\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{APage_8hpp}{APage.hpp}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{Paralax_8hpp}{Paralax.hpp}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{Player_8hpp}{Player.hpp}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{EnemyBomb_8hpp}{EnemyBomb.hpp}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{EnemyDragon_8hpp}{EnemyDragon.hpp}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{EnemyGreen_8hpp}{EnemyGreen.hpp}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{EnemyMonster_8hpp}{EnemyMonster.hpp}}"{}}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{Shot_8hpp}{Shot.hpp}}"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\ \ \ \ \#include\ <libconfig.h++>}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacert}{rt}}\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classrt_1_1GamePage}{GamePage}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classrt_1_1APage}{APage}}\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1GamePage}{GamePage}}(}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<sf::RenderWindow>\ window,}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44f}{Event}}\ \textcolor{keyword}{const}\ \&myEvent}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1GamePage_a72c361f9f8c7c409d9c3a298e1d722d2}{\string~GamePage}}(\textcolor{keywordtype}{void})\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1GamePage_a34dac45561174f251d25e7ba510edb90}{load\_level}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ std::string\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classrt_1_1GamePage_a6703f02dfaccfed2ebca7049633a6305}{run}}(\mbox{\hyperlink{structrt_1_1GameData}{GameData}}\ \&data);}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1GamePage_a8fdad347d80f7120ed8e6f8a51ec0437}{add\_player}}(\textcolor{keywordtype}{int}\ \textcolor{keyword}{const}\ elemId);}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1GamePage_adda91d8cf9e4cf7d5319a3f65d5c10e5}{draw\_all\_element}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1GamePage_a6186b0335353aa46dec053de0305738c}{object\_disparution}}(std::queue<std::string>\ \&requests);}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1GamePage_a9446b58f025dccc0f7e50729a50f3977}{generate\_enemy}}(std::queue<std::string>\ \&requests);}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classrt_1_1GamePage_af2fde95b23b112ff1844909ff7109325}{player\_colision}}(std::queue<std::string>\ \&requests);}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classrt_1_1GamePage_a90e24201a20dc53594de38441542f2e4}{enemy\_colision}}(std::queue<std::string>\ \&requests);}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1GamePage_a66659b04f96b382361d800890be1c5f4}{remove\_useless\_data}}(std::queue<std::string>\ \&requests);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ libconfig::Config\ \_levelCfg;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ sf::Clock\ \_enemyClock;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ std::unique\_ptr<Paralax>\ \_paralax;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44f}{Event}}\ \textcolor{keyword}{const}\ \&\_myEvent;}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ std::shared\_ptr<rt::Player>\ \_player;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ std::map<int,\ std::shared\_ptr<Player>>\ \_players;}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ std::vector<std::shared\_ptr<AEnemy>>\ \_enemies;}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ std::vector<std::shared\_ptr<Shot>>\ \_shots;}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ sf::Clock\ \_bonusClock;}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ std::string\ \_shotSprite;}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \_shotSpeed;}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ std::string\ \_enemyType;}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_level;}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \_start;}
+\DoxyCodeLine{00063\ \ \ \ \ \};}
+\DoxyCodeLine{00064\ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

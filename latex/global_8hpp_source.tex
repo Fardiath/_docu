@@ -1,0 +1,73 @@
+\hypertarget{global_8hpp_source}{}\doxysection{global.\+hpp}
+\label{global_8hpp_source}\index{client/include/global.hpp@{client/include/global.hpp}}
+\mbox{\hyperlink{global_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ IPage.h}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ IPage}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ \_GLOBAL\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ \_GLOBAL\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#define\ FRAMERATE\ 90}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#define\ WIDTH\ 1100}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#define\ HEIGHT\ 600}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ \#define\ SERVER\_WIDTH\ 200}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\ \ \ \ \#define\ SERVER\_HEIGHT\ 100}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \ \ \ \#include\ <iostream>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \ \ \#include\ <fstream>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\ \ \ \ \#include\ <string>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\ \ \ \ \#include\ <vector>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\ \ \ \ \#include\ <queue>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\ \ \ \ \#include\ <utility>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\ \ \ \ \#include\ <map>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\ \ \ \ \#include\ <unordered\_map>}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\ \ \ \ \#include\ <memory>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\ \ \ \ \#include\ <cmath>}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacert}{rt}}\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{namespacert_a08f089eb1262b0c30a2825e3d07b4e49}{KeyEvent}}\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a08f089eb1262b0c30a2825e3d07b4e49a3537ec11ec572aa69711a8fd8f146b4e}{UNDEFINED}}\ =\ 0,}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a08f089eb1262b0c30a2825e3d07b4e49a4beff8b2946c958b0cad5e3150b11a5a}{Hover}}\ =\ 1,}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a08f089eb1262b0c30a2825e3d07b4e49abaa9c833d4a5d3a726c8c95923261b6a}{JustClicked}}\ =\ 2,}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a08f089eb1262b0c30a2825e3d07b4e49a7cd2e49c4c4a2ca9d677347d13085717}{Clicking}}\ =\ 3,}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a08f089eb1262b0c30a2825e3d07b4e49a4b3f36791a0dd3320d0677f969bf5084}{Clicked}}\ =\ 4,}
+\DoxyCodeLine{00039\ \ \ \ \ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44f}{Event}}\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44fab810918a0b927865e828fd42f3d5208e}{Close}}\ =\ 0,}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44fa18590476afee78ddbbffa87ee8905ccd}{Up}}\ =\ 1,}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44fae1153c80f966c6b11af248d8463633f4}{Down}}\ =\ 2,}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44fa75deedfcd151bf785b5678d5cbcc42fe}{Left}}\ =\ 3,}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44fa76d176fdee5bdd36ef7ea8cf1cf6806b}{Right}}\ =\ 4,}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44fab01e5a7f7f9dad9359844d016484044b}{Space}}\ =\ 5,}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44fa4e29d49cc0406c4b59f236d371e5c8ca}{MouseLeft}}\ =\ 6,}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44fa7b19e1df628e2f67fe0e5a4aee9b3b88}{UNKNOWN}}\ =\ 7}
+\DoxyCodeLine{00050\ \ \ \ \ \};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{namespacert_a63fba6cbd2f6d153bb264fff63af30d2}{Connexion}}\ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a63fba6cbd2f6d153bb264fff63af30d2a6b70d2b77b6c6506ac16b815ed91651a}{Disconnected}}\ =\ 0,}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a63fba6cbd2f6d153bb264fff63af30d2a3503f544f8186f8f191cc0566636a464}{ConnectRequest}}\ =\ 1,}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a63fba6cbd2f6d153bb264fff63af30d2aecf40b9d2ab25df54285f470b53e79ec}{WaitingResponse}}\ =\ 2,}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a63fba6cbd2f6d153bb264fff63af30d2ad1cb0861a1391252413736f76c3e91c7}{Connected}}\ =\ 3}
+\DoxyCodeLine{00057\ \ \ \ \ \};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structrt_1_1GameData_a1abfbc87a6648c9ee154253e83c75f3e}{playerId}};}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structrt_1_1GameData_a01990bb93ed57b7afe3c2d658829403e}{address}};}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structrt_1_1GameData_a08ccfcbf263a7d8de59229349294e3b9}{port}};}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structrt_1_1GameData_a1636014ae6a70dcf87b47f23ce6c7ee9}{playerName}};}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ std::map<int,\ std::pair<double,\ double>>\ \mbox{\hyperlink{structrt_1_1GameData_a2c6ebae37f3f3d6f68055911d15c6e8b}{posList}};}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ std::queue<std::string>\ \mbox{\hyperlink{structrt_1_1GameData_af11a87a6247303c8fcaea54866ea6ef6}{requests}};}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structrt_1_1GameData_a326453a6f20eb3c1f160abf84ce08bc4}{connected}};}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structrt_1_1GameData_aad48a6d5f75c62c4dc70a360888fe30c}{error}};}
+\DoxyCodeLine{00072\ \ \ \ \ \}\ \mbox{\hyperlink{structrt_1_1GameData}{GameData}};}
+\DoxyCodeLine{00073\ \}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

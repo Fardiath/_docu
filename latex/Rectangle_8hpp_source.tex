@@ -1,0 +1,78 @@
+\hypertarget{Rectangle_8hpp_source}{}\doxysection{Rectangle.\+hpp}
+\label{Rectangle_8hpp_source}\index{client/Graphic/include/Rectangle.hpp@{client/Graphic/include/Rectangle.hpp}}
+\mbox{\hyperlink{Rectangle_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ Rectangle.h}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Rectangle}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ \_RECTANGLE\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ \_RECTANGLE\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{AObject_8hpp}{AObject.hpp}}"{}}}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacert}{rt}}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classrt_1_1AObject}{AObject}}\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Rectangle_a0c89496ce6470fad61d996763e532ae5}{Rectangle}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Rectangle_aea61bf50ea67d6425f2b90b4cdce5a9d}{Rectangle}}(}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ sf::Vector2f\ \textcolor{keyword}{const}\ \&rectPos,}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ sf::Vector2f\ \textcolor{keyword}{const}\ \&rectSize,}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \textcolor{keyword}{const}\ \&imageSrc}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Rectangle_aa76611dcef10f52edc9930b4651a4e25}{Rectangle}}(}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ sf::Vector2f\ \textcolor{keyword}{const}\ \&rectSize,}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \textcolor{keyword}{const}\ \&imageSrc}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Rectangle_a0c89496ce6470fad61d996763e532ae5}{Rectangle}}(}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ sf::Vector2f\ \textcolor{keyword}{const}\ \&rectPos,}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ sf::Vector2f\ \textcolor{keyword}{const}\ \&rectSize,}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ sf::Color\ \textcolor{keyword}{const}\ \&fullColor\ =\ sf::Color::Transparent}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Rectangle_a0c89496ce6470fad61d996763e532ae5}{Rectangle}}(}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ sf::Vector2f\ \textcolor{keyword}{const}\ \&rectSize,}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ sf::Color\ \textcolor{keyword}{const}\ \&fullColor\ =\ sf::Color::Transparent}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Rectangle_a0c89496ce6470fad61d996763e532ae5}{Rectangle}}(\mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\ \textcolor{keyword}{const}\ \&copy);}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\&\ \mbox{\hyperlink{classrt_1_1Rectangle_a06cb5c195da15d34176f2958bd2d57e1}{operator=}}(\mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\ \textcolor{keyword}{const}\ \&copy);}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Rectangle_a2b597a0332f7df2e0928f2271c322216}{\string~Rectangle}}(\textcolor{keywordtype}{void})\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1Rectangle_a8f52d79b359905cb5fc89dde03242bf1}{restore}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ sf::RectangleShape\ \&\mbox{\hyperlink{classrt_1_1Rectangle_ad5d8f849f3bf6535cab087884f89ca73}{get}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1Rectangle_ab12a29fa2412155201aceca3e4a80c1d}{draw}}(std::shared\_ptr<sf::RenderWindow>\ window)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classrt_1_1Rectangle_aa1322f08da61371ccc76575c01402593}{getSurvol}}(std::shared\_ptr<sf::RenderWindow>\ window)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classrt_1_1Rectangle_a90749bf84281ffe482c477f88c7b75fa}{getClicked}}(shared\_ptr<sf::RenderWindow>\ window)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ sf::Vector2f\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classrt_1_1Rectangle_afa023a2f94fd7fff15d0427177b406ed}{getPosition}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1Rectangle_a16d8e9c5aa7b70fe74d8c8c54ca110cc}{setPosition}}(sf::Vector2f\ \textcolor{keyword}{const}\ \&position);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ sf::Vector2f\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classrt_1_1Rectangle_a637621d54453a85540a547212b38ed38}{getSize}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1Rectangle_ac146e1ab2a12ffb3126f6c2e536ee0cb}{setSize}}(sf::Vector2f\ \textcolor{keyword}{const}\ \&size);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1Rectangle_ab2dd77276a4e2f31081b84c6f94cd182}{setSong}}(\textcolor{keywordtype}{string}\ \textcolor{keyword}{const}\ \&songString);}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1Rectangle_a254ac0c81b3e526e351c3891562b24ab}{stopSong}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classrt_1_1Rectangle_a93e455bb9e9f644d305c11386a3e9929}{colision}}(\mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\ \textcolor{keyword}{const}\ \&rectangle);}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classrt_1_1Rectangle_a93e455bb9e9f644d305c11386a3e9929}{colision}}(sf::Vector2f\ \textcolor{keyword}{const}\ \&position);}
+\DoxyCodeLine{00062\ \ \ \ \ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ sf::RectangleShape\ \mbox{\hyperlink{classrt_1_1Rectangle_ae1bfd0960100ea8c91012beb3b18ea66}{\_rect}};}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{classrt_1_1Rectangle_a0dc69baa1c0dfaec4a69f9eefa6a0747}{\_position}};}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{classrt_1_1Rectangle_a8cd19b08de5c56a2973b7446cf5651ef}{\_size}};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ sf::Texture\ \mbox{\hyperlink{classrt_1_1Rectangle_a6709c49d1c553d29c10c15cc0b25eec8}{\_texture}};}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ sf::Color\ \mbox{\hyperlink{classrt_1_1Rectangle_afe3223b465fd87a9f6c16d8e3ed5e99a}{\_backgroudColor}}\ =\ sf::Color::Transparent;}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a08f089eb1262b0c30a2825e3d07b4e49}{KeyEvent}}\ \mbox{\hyperlink{classrt_1_1Rectangle_a5af04fe37e47c6d6687a2b23f8e59324}{\_currentEvent}};}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classrt_1_1Rectangle_a6d0780a906a4185899bae4fef75174d6}{\_lastClick}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ sf::Music\ \mbox{\hyperlink{classrt_1_1Rectangle_a7431b0d8b56772e7ce72bb55adc6b32c}{\_song}};}
+\DoxyCodeLine{00073\ \ \ \ \ \};}
+\DoxyCodeLine{00074\ \}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

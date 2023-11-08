@@ -1,0 +1,49 @@
+\hypertarget{AnimatedRectangle_8hpp_source}{}\doxysection{Animated\+Rectangle.\+hpp}
+\label{AnimatedRectangle_8hpp_source}\index{client/Graphic/include/AnimatedRectangle.hpp@{client/Graphic/include/AnimatedRectangle.hpp}}
+\mbox{\hyperlink{AnimatedRectangle_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ AnimatedRectangle.h}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ AnimatedRectangle}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ \_ANIMATED\_RECTANGLE\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ \_ANIMATED\_RECTANGLE\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{Rectangle_8hpp}{Rectangle.hpp}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacert}{rt}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classrt_1_1AnimatedRectangle}{AnimatedRectangle}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1AnimatedRectangle}{AnimatedRectangle}}(}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\ \textcolor{keyword}{const}\ \&rtRect,}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ sf::IntRect\ \textcolor{keyword}{const}\ \&intRect\ =\ sf::IntRect(),}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ sf::IntRect\ \textcolor{keyword}{const}\ \&imageLimit\ =\ sf::IntRect(),}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ sf::Vector2f\ \textcolor{keyword}{const}\ \&animationSequence\ =\ sf::Vector2f(),}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \textcolor{keyword}{const}\ \&miliDelay\ =\ 0}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classrt_1_1AnimatedRectangle_a5119c0140ac65db91de1a7584d71eda8}{\string~AnimatedRectangle}}(\textcolor{keywordtype}{void})\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1AnimatedRectangle_a3339f22f17c0fc948aad4f079cef478c}{setAnimation}}(}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ sf::IntRect\ \textcolor{keyword}{const}\ \&intRect,}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ sf::IntRect\ \textcolor{keyword}{const}\ \&imageLimit,}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ sf::Vector2f\ \textcolor{keyword}{const}\ \&animationSequence,}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \textcolor{keyword}{const}\ \&miliDelay\ =\ 0}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classrt_1_1AnimatedRectangle_a348130378353a5e1aae88c83f05bad7a}{ifVisible}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1AnimatedRectangle_adc0207d25551d7430221137dfb88c9dd}{moveImageRect}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1AnimatedRectangle_a9ca05d7767a7353207c33b9bc398b1ba}{react}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ sf::Clock\ \mbox{\hyperlink{classrt_1_1AnimatedRectangle_a8751616354a7ca26284108557fc48263}{\_clock}};}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ sf::IntRect\ \mbox{\hyperlink{classrt_1_1AnimatedRectangle_a461c1996f30ae5739e8e571ade106499}{\_intRect}};}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ sf::IntRect\ \mbox{\hyperlink{classrt_1_1AnimatedRectangle_ab18d99cea17a4220e0ec9f4993056acd}{\_imageLimit}};}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{classrt_1_1AnimatedRectangle_a7e2592461dc59338ae7601c2f9afd117}{\_animationSequence}};}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classrt_1_1AnimatedRectangle_ace6e26f3af86bdd55fb6375901966e82}{\_miliDelay}};}
+\DoxyCodeLine{00044\ \ \ \ \ \};}
+\DoxyCodeLine{00045\ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

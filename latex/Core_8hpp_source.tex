@@ -1,0 +1,39 @@
+\hypertarget{Core_8hpp_source}{}\doxysection{Core.\+hpp}
+\label{Core_8hpp_source}\index{client/Core/include/Core.hpp@{client/Core/include/Core.hpp}}
+\mbox{\hyperlink{Core_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ Core.h}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Core}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ \_CLIENT\_CORE\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ \_CLIENT\_CORE\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}../../Graphic/include/Graphics.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}../../Network/include/Network.hpp"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacert}{rt}}\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classrt_1_1Core}{Core}}\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Core_a5767b09b2c86324c6bf839398affc2b5}{Core}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Core_ae2f2574a2f140cba370ca32346cb87cf}{\string~Core}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1Core_a9cbc59ea9a2101f1349dfa9d2dd2363c}{run}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1Core_ac88d9c3ebd805a311bbbff62caaddb80}{request\_management}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1Core_aea4920790008b7a876d707eac26df4c0}{response\_management}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ std::unique\_ptr<GUI>\ \_graphics;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ std::unique\_ptr<Network>\ \_network;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structrt_1_1GameData}{GameData}}\ \_data;}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_start;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ boost::thread\ \_threadSend;}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ boost::thread\ \_threadRecv;}
+\DoxyCodeLine{00030\ \ \ \ \ \};}
+\DoxyCodeLine{00031\ \}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

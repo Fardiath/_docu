@@ -1,0 +1,44 @@
+\hypertarget{Button_8hpp_source}{}\doxysection{Button.\+hpp}
+\label{Button_8hpp_source}\index{client/Graphic/include/Button.hpp@{client/Graphic/include/Button.hpp}}
+\mbox{\hyperlink{Button_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ Button.h}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Button}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ \_BUTTON\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ \_BUTTON\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{Rectangle_8hpp}{Rectangle.hpp}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{Text_8hpp}{Text.hpp}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacert}{rt}}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classrt_1_1Button}{Button}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Button_aa4f8813f690bb94168eb2cd7edff2fa2}{Button}}(\textcolor{keywordtype}{void})\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Button_aa4f8813f690bb94168eb2cd7edff2fa2}{Button}}(}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\ \textcolor{keyword}{const}\ \&textBackground,}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Text}{Text}}\ \textcolor{keyword}{const}\ \&textString}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Button_aa4f8813f690bb94168eb2cd7edff2fa2}{Button}}(\mbox{\hyperlink{classrt_1_1Button}{Button}}\ \textcolor{keyword}{const}\ \&copy);}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Button}{Button}}\&\ \mbox{\hyperlink{classrt_1_1Button_a481a022a7b5cfbe424be1b651196f540}{operator=}}(\mbox{\hyperlink{classrt_1_1Button}{Button}}\ \textcolor{keyword}{const}\ \&copy);}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Button_aeb4ec12df772b80bdaa5ac3687b6c205}{\string~Button}}(\textcolor{keywordtype}{void})\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1Button_a3ec65c3452b6dc4701cb751b1329f9c2}{setPosition}}(sf::Vector2f\ \textcolor{keyword}{const}\ \&position);}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classrt_1_1Button_a6ffef88e5a7becefeef3e45f97d22ce8}{react}}(std::shared\_ptr<sf::RenderWindow>\ window);}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacert_a08f089eb1262b0c30a2825e3d07b4e49}{KeyEvent}}\ \textcolor{keyword}{const}\ \&\mbox{\hyperlink{classrt_1_1Button_af6acbb60dc02aed585380e3894133160}{getEvent}}(std::shared\_ptr<sf::RenderWindow>\ window);}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1Button_accd93cde90db815dcb41caffe754cfb4}{draw}}(std::shared\_ptr<sf::RenderWindow>\ window)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1Button_a023bfdde2ab918a26054a1d190fee1a4}{setSong}}(\textcolor{keywordtype}{string}\ \textcolor{keyword}{const}\ \&songString\ =\ \textcolor{stringliteral}{"{}./assets/musics/click\_son.ogg"{}});}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1Button_aa3a267e6c36ac564661278fea1227169}{stopSong}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Text}{Text}}\ \_buttonValue;}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ sf::Music\ \_song;}
+\DoxyCodeLine{00039\ \ \ \ \ \};}
+\DoxyCodeLine{00040\ \}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

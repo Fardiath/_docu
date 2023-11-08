@@ -1,0 +1,43 @@
+\hypertarget{Network_8hpp_source}{}\doxysection{Network.\+hpp}
+\label{Network_8hpp_source}\index{client/Network/include/Network.hpp@{client/Network/include/Network.hpp}}
+\mbox{\hyperlink{Network_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ Client}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ client}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ \_CLIENT\_NETWORK\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ \_CLIENT\_NETWORK\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}../../include/global.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ <boost/asio.hpp>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#include\ <boost/thread.hpp>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacert}{rt}}\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classrt_1_1Network}{Network}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Network}{Network}}(\mbox{\hyperlink{structrt_1_1GameData}{GameData}}\ \&data);}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrt_1_1Network_a95fb435e2a9f0a6d6099a76fb3c3d438}{\string~Network}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classrt_1_1Network_a3dedd06a4225a606ed7313a0ff3f2f33}{connect}}(std::string\ \textcolor{keyword}{const}\ \&address,\ std::string\ \textcolor{keyword}{const}\ \&port);}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1Network_a4cecd50b14f748497a3259b1aa6c6499}{send}}(std::string\ \textcolor{keyword}{const}\ \&msg);}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ std::string\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classrt_1_1Network_a79d2672713e198c922b9db43726427f0}{recv}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrt_1_1Network_ac5275cfbcfc8c555537f2e7c2130b22c}{trait\_response}}(std::string\ \textcolor{keyword}{const}\ \&serverResponse);}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classrt_1_1Network_a217d4d8a1f3817050d2cb8f1f6cd81c3}{split}}(std::string\ \textcolor{keyword}{const}\ \&str,\ std::string\ \textcolor{keyword}{const}\ \&sep);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ boost::asio::io\_context\ \_io\_context;}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ std::unique\_ptr<boost::asio::ip::udp::socket>\ \_socket;}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ boost::asio::ip::udp::endpoint\ \_server\_endpoint;}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ std::unique\_ptr<boost::thread>\ \_threadSend;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ std::unique\_ptr<boost::thread>\ \_threadRecv;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structrt_1_1GameData}{GameData}}\ \&\_data;}
+\DoxyCodeLine{00034\ \ \ \ \ \};}
+\DoxyCodeLine{00035\ \}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !\_CLIENT\_NETWORK\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,307 @@
+\hypertarget{classrt_1_1SettingPage}{}\doxysection{rt\+::Setting\+Page Class Reference}
+\label{classrt_1_1SettingPage}\index{rt::SettingPage@{rt::SettingPage}}
+
+
+create settingpage class  
+
+
+
+
+{\ttfamily \#include $<$Page\+Setting.\+hpp$>$}
+
+Inheritance diagram for rt\+::Setting\+Page\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classrt_1_1SettingPage}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrt_1_1SettingPage_aecacc037bc900bfa9db5595c2b623f84}{Setting\+Page}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window, sf\+::\+Event const \&my\+Event)
+\begin{DoxyCompactList}\small\item\em Construct a new Setting Page. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrt_1_1SettingPage_a0cb0cf257140ee994d6080b728c3c46d}{$\sim$\+Setting\+Page}} (void)=default
+\item 
+std\+::string const \mbox{\hyperlink{classrt_1_1SettingPage_a4a149fb49e745e2c6a02c7c07eeb8f58}{run}} (\mbox{\hyperlink{structrt_1_1GameData}{Game\+Data}} \&data)
+\item 
+std\+::string const \mbox{\hyperlink{classrt_1_1SettingPage_aa11da0dfc2c50201ef1642bfa5babf41}{network\+Page}} (\mbox{\hyperlink{structrt_1_1GameData}{Game\+Data}} \&data)
+\begin{DoxyCompactList}\small\item\em build network page class \mbox{\hyperlink{classrt_1_1SettingPage}{Setting\+Page}} params data \end{DoxyCompactList}\item 
+std\+::string const \mbox{\hyperlink{classrt_1_1SettingPage_a231dd9d30cfa8dc2329048fd027c6302}{room\+Page}} (\mbox{\hyperlink{structrt_1_1GameData}{Game\+Data}} \&data)
+\begin{DoxyCompactList}\small\item\em build room page class \mbox{\hyperlink{classrt_1_1SettingPage}{Setting\+Page}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrt_1_1SettingPage_ac34f7fb484264849e433fee07419d27e}{add\+\_\+inputs}} (sf\+::\+Vector2f label\+Pos)
+\item 
+void \mbox{\hyperlink{classrt_1_1SettingPage_a8d7d8158d658146866f2318ff0cbb0af}{add\+\_\+servers}} (sf\+::\+Vector2f label\+Pos)
+\item 
+void \mbox{\hyperlink{classrt_1_1SettingPage_a85f572e4f38879869e4825c6de0cdab2}{switch\+\_\+between\+\_\+inputs}} (\mbox{\hyperlink{structrt_1_1GameData}{Game\+Data}} \&data)
+\item 
+bool \mbox{\hyperlink{classrt_1_1SettingPage_a8c59d1c2b5eb745325f4b16c16171fd2}{display\+\_\+rooms}} (std\+::queue$<$ std\+::string $>$ \&requests, sf\+::\+Vector2f \&room\+Pos)
+\begin{DoxyCompactList}\small\item\em display room adding class \mbox{\hyperlink{classrt_1_1SettingPage}{Setting\+Page}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrt_1_1SettingPage_a0f7cda00ba4a3c0c503e9d9645d4d9a7}{add\+\_\+new\+\_\+room}} (void)
+\begin{DoxyCompactList}\small\item\em create a room class \mbox{\hyperlink{classrt_1_1SettingPage}{Setting\+Page}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classrt_1_1APage}{rt\+::\+APage}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrt_1_1APage_a729b3c00d9a122e2a8610e2f486d9123}{APage}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window)
+\item 
+virtual \mbox{\hyperlink{classrt_1_1APage_ae3c8e85c5ab782bcaee5884fd7f80759}{$\sim$\+APage}} (void)=default
+\item 
+void \mbox{\hyperlink{classrt_1_1APage_ab01deb5b25189af2f69f10ad0f197e31}{set\+Page\+Song}} (std\+::string const \&song\+String)
+\begin{DoxyCompactList}\small\item\em Construct a new Over Page\+:\+: Over Page object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrt_1_1APage_ac9707a984fbc250adb384f8a375abfac}{stop\+Song}} (void)
+\begin{DoxyCompactList}\small\item\em Construct a new Over Page\+:\+: Over Page object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classrt_1_1IPage}{rt\+::\+IPage}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classrt_1_1IPage_a8faea6f1e12d30e8106d6b3b93e9a490}{$\sim$\+IPage}} (void)=default
+\item 
+virtual std\+::string const \mbox{\hyperlink{classrt_1_1IPage_ac4c179ce2e72523dc07e5d613160aa3b}{run}} (\mbox{\hyperlink{structrt_1_1GameData}{Game\+Data}} \&data)=0
+\item 
+virtual void \mbox{\hyperlink{classrt_1_1IPage_a51d61b86ab9df855e766d44c8fb758eb}{set\+Page\+Song}} (std\+::string const \&song)=0
+\item 
+virtual void \mbox{\hyperlink{classrt_1_1IPage_abf8504e76bb0b0d96e989833cae4bf4d}{stop\+Song}} (void)=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classrt_1_1Rectangle}{rt\+::\+Rectangle}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_a0c89496ce6470fad61d996763e532ae5}{Rectangle}} (void)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\+:\+: \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_aea61bf50ea67d6425f2b90b4cdce5a9d}{Rectangle}} (sf\+::\+Vector2f const \&rect\+Pos, sf\+::\+Vector2f const \&rect\+Size, std\+::string const \&image\+Src)
+\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_aa76611dcef10f52edc9930b4651a4e25}{Rectangle}} (sf\+::\+Vector2f const \&rect\+Size, std\+::string const \&image\+Src)
+\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_a09e8afee4e0402ab41a9549f91b9a17e}{Rectangle}} (sf\+::\+Vector2f const \&rect\+Pos, sf\+::\+Vector2f const \&rect\+Size, sf\+::\+Color const \&full\+Color=sf\+::\+Color\+::\+Transparent)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\+:\+: \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} object class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_a61b8c2aa2773c2e9a848a8246257162d}{Rectangle}} (sf\+::\+Vector2f const \&rect\+Size, sf\+::\+Color const \&full\+Color=sf\+::\+Color\+::\+Transparent)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\+:\+: \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} object class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_ae58053dff25ac4166f9b077b9f87f46c}{Rectangle}} (\mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} const \&copy)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\+:\+: \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} object class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \& \mbox{\hyperlink{classrt_1_1Rectangle_a06cb5c195da15d34176f2958bd2d57e1}{operator=}} (\mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} const \&copy)
+\begin{DoxyCompactList}\small\item\em implement equality operator class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_a2b597a0332f7df2e0928f2271c322216}{$\sim$\+Rectangle}} (void)=default
+\item 
+void \mbox{\hyperlink{classrt_1_1Rectangle_a8f52d79b359905cb5fc89dde03242bf1}{restore}} (void)
+\begin{DoxyCompactList}\small\item\em restaure position \end{DoxyCompactList}\item 
+sf\+::\+Rectangle\+Shape \& \mbox{\hyperlink{classrt_1_1Rectangle_ad5d8f849f3bf6535cab087884f89ca73}{get}} (void)
+\begin{DoxyCompactList}\small\item\em get value \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrt_1_1Rectangle_ab12a29fa2412155201aceca3e4a80c1d}{draw}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window) const
+\begin{DoxyCompactList}\small\item\em draw window class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classrt_1_1Rectangle_aa1322f08da61371ccc76575c01402593}{get\+Survol}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window) const
+\begin{DoxyCompactList}\small\item\em check condition if there is hover class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classrt_1_1Rectangle_a90749bf84281ffe482c477f88c7b75fa}{get\+Clicked}} (shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window) const
+\begin{DoxyCompactList}\small\item\em check condition if there in clicking class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+sf\+::\+Vector2f const \mbox{\hyperlink{classrt_1_1Rectangle_afa023a2f94fd7fff15d0427177b406ed}{get\+Position}} (void) const
+\begin{DoxyCompactList}\small\item\em get position class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrt_1_1Rectangle_a16d8e9c5aa7b70fe74d8c8c54ca110cc}{set\+Position}} (sf\+::\+Vector2f const \&position)
+\begin{DoxyCompactList}\small\item\em set position class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+sf\+::\+Vector2f const \mbox{\hyperlink{classrt_1_1Rectangle_a637621d54453a85540a547212b38ed38}{get\+Size}} (void) const
+\begin{DoxyCompactList}\small\item\em get position class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrt_1_1Rectangle_ac146e1ab2a12ffb3126f6c2e536ee0cb}{set\+Size}} (sf\+::\+Vector2f const \&size)
+\begin{DoxyCompactList}\small\item\em set position class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrt_1_1Rectangle_ab2dd77276a4e2f31081b84c6f94cd182}{set\+Song}} (string const \&song\+String)
+\item 
+void \mbox{\hyperlink{classrt_1_1Rectangle_a254ac0c81b3e526e351c3891562b24ab}{stop\+Song}} (void)
+\item 
+bool \mbox{\hyperlink{classrt_1_1Rectangle_a93e455bb9e9f644d305c11386a3e9929}{colision}} (\mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} const \&rectangle)
+\begin{DoxyCompactList}\small\item\em update position class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classrt_1_1Rectangle_aadc0c367dacc403258acb033d4cf7b53}{colision}} (sf\+::\+Vector2f const \&position)
+\begin{DoxyCompactList}\small\item\em update position class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classrt_1_1AObject}{rt\+::\+AObject}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrt_1_1AObject_ae9be2b861738e9b43f6ccf8bdb1ab0e0}{AObject}} (void)
+\item 
+\mbox{\hyperlink{classrt_1_1AObject_a89d0cfe6bb89b27e874d0ab695b4a6a1}{AObject}} (int const id)
+\item 
+\mbox{\hyperlink{classrt_1_1AObject_aa0a5a0db9cc6c0ffbf10006110ea4494}{$\sim$\+AObject}} (void)=default
+\item 
+std\+::string \mbox{\hyperlink{classrt_1_1AObject_a70bd424f0cdf999ac212569d1791ea3d}{get\+Id}} (void)
+\item 
+virtual void \mbox{\hyperlink{classrt_1_1AObject_a230e38d7506e5317dba522a481da5c9c}{draw}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window) const =0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classrt_1_1IObject}{rt\+::\+IObject}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classrt_1_1IObject_a1896cae189c15394cd5b563119b521cc}{$\sim$\+IObject}} (void)=default
+\item 
+virtual std\+::string \mbox{\hyperlink{classrt_1_1IObject_afad8311268e4475799b3b89188366fce}{get\+Id}} (void)=0
+\item 
+virtual void \mbox{\hyperlink{classrt_1_1IObject_ac2efb29634d6dd58f5fb4cf47a30e189}{draw}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window) const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{classrt_1_1IPage}{rt\+::\+IPage}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \mbox{\hyperlink{classrt_1_1IPage_a8962a3d2fd703798257dc4e880249db1}{\+\_\+window}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{classrt_1_1Rectangle}{rt\+::\+Rectangle}}}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Rectangle\+Shape \mbox{\hyperlink{classrt_1_1Rectangle_ae1bfd0960100ea8c91012beb3b18ea66}{\+\_\+rect}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classrt_1_1Rectangle_a0dc69baa1c0dfaec4a69f9eefa6a0747}{\+\_\+position}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classrt_1_1Rectangle_a8cd19b08de5c56a2973b7446cf5651ef}{\+\_\+size}}
+\item 
+sf\+::\+Texture \mbox{\hyperlink{classrt_1_1Rectangle_a6709c49d1c553d29c10c15cc0b25eec8}{\+\_\+texture}}
+\item 
+sf\+::\+Color \mbox{\hyperlink{classrt_1_1Rectangle_afe3223b465fd87a9f6c16d8e3ed5e99a}{\+\_\+backgroud\+Color}} = sf\+::\+Color\+::\+Transparent
+\item 
+\mbox{\hyperlink{namespacert_a08f089eb1262b0c30a2825e3d07b4e49}{Key\+Event}} \mbox{\hyperlink{classrt_1_1Rectangle_a5af04fe37e47c6d6687a2b23f8e59324}{\+\_\+current\+Event}}
+\item 
+bool \mbox{\hyperlink{classrt_1_1Rectangle_a6d0780a906a4185899bae4fef75174d6}{\+\_\+last\+Click}} = false
+\item 
+sf\+::\+Music \mbox{\hyperlink{classrt_1_1Rectangle_a7431b0d8b56772e7ce72bb55adc6b32c}{\+\_\+song}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{classrt_1_1IObject}{rt\+::\+IObject}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classrt_1_1IObject_adf9d37fb92ac94395ecac48ae1e5d7ce}{\+\_\+id}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classrt_1_1IPage}{rt\+::\+IPage}}}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::unique\+\_\+ptr$<$ sf\+::\+Music $>$ \mbox{\hyperlink{classrt_1_1IPage_a0982ae3d9127d5439d698f8237788d3f}{\+\_\+page\+Song}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+create settingpage class 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrt_1_1SettingPage_aecacc037bc900bfa9db5595c2b623f84}\label{classrt_1_1SettingPage_aecacc037bc900bfa9db5595c2b623f84}} 
+\index{rt::SettingPage@{rt::SettingPage}!SettingPage@{SettingPage}}
+\index{SettingPage@{SettingPage}!rt::SettingPage@{rt::SettingPage}}
+\doxysubsubsection{\texorpdfstring{SettingPage()}{SettingPage()}}
+{\footnotesize\ttfamily rt\+::\+Setting\+Page\+::\+Setting\+Page (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$}]{window,  }\item[{sf\+::\+Event const \&}]{my\+Event }\end{DoxyParamCaption})}
+
+
+
+Construct a new Setting Page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em event} & \\
+\hline
+{\em sf\+Event} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrt_1_1SettingPage_a0cb0cf257140ee994d6080b728c3c46d}\label{classrt_1_1SettingPage_a0cb0cf257140ee994d6080b728c3c46d}} 
+\index{rt::SettingPage@{rt::SettingPage}!````~SettingPage@{$\sim$SettingPage}}
+\index{````~SettingPage@{$\sim$SettingPage}!rt::SettingPage@{rt::SettingPage}}
+\doxysubsubsection{\texorpdfstring{$\sim$SettingPage()}{~SettingPage()}}
+{\footnotesize\ttfamily rt\+::\+Setting\+Page\+::$\sim$\+Setting\+Page (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrt_1_1SettingPage_ac34f7fb484264849e433fee07419d27e}\label{classrt_1_1SettingPage_ac34f7fb484264849e433fee07419d27e}} 
+\index{rt::SettingPage@{rt::SettingPage}!add\_inputs@{add\_inputs}}
+\index{add\_inputs@{add\_inputs}!rt::SettingPage@{rt::SettingPage}}
+\doxysubsubsection{\texorpdfstring{add\_inputs()}{add\_inputs()}}
+{\footnotesize\ttfamily void rt\+::\+Setting\+Page\+::add\+\_\+inputs (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{label\+Pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrt_1_1SettingPage_a0f7cda00ba4a3c0c503e9d9645d4d9a7}\label{classrt_1_1SettingPage_a0f7cda00ba4a3c0c503e9d9645d4d9a7}} 
+\index{rt::SettingPage@{rt::SettingPage}!add\_new\_room@{add\_new\_room}}
+\index{add\_new\_room@{add\_new\_room}!rt::SettingPage@{rt::SettingPage}}
+\doxysubsubsection{\texorpdfstring{add\_new\_room()}{add\_new\_room()}}
+{\footnotesize\ttfamily void rt\+::\+Setting\+Page\+::add\+\_\+new\+\_\+room (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+create a room class \mbox{\hyperlink{classrt_1_1SettingPage}{Setting\+Page}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em true} & \\
+\hline
+{\em false} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string const 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrt_1_1SettingPage_a8d7d8158d658146866f2318ff0cbb0af}\label{classrt_1_1SettingPage_a8d7d8158d658146866f2318ff0cbb0af}} 
+\index{rt::SettingPage@{rt::SettingPage}!add\_servers@{add\_servers}}
+\index{add\_servers@{add\_servers}!rt::SettingPage@{rt::SettingPage}}
+\doxysubsubsection{\texorpdfstring{add\_servers()}{add\_servers()}}
+{\footnotesize\ttfamily void rt\+::\+Setting\+Page\+::add\+\_\+servers (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{label\+Pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrt_1_1SettingPage_a8c59d1c2b5eb745325f4b16c16171fd2}\label{classrt_1_1SettingPage_a8c59d1c2b5eb745325f4b16c16171fd2}} 
+\index{rt::SettingPage@{rt::SettingPage}!display\_rooms@{display\_rooms}}
+\index{display\_rooms@{display\_rooms}!rt::SettingPage@{rt::SettingPage}}
+\doxysubsubsection{\texorpdfstring{display\_rooms()}{display\_rooms()}}
+{\footnotesize\ttfamily bool rt\+::\+Setting\+Page\+::display\+\_\+rooms (\begin{DoxyParamCaption}\item[{std\+::queue$<$ std\+::string $>$ \&}]{requests,  }\item[{sf\+::\+Vector2f \&}]{room\+Pos }\end{DoxyParamCaption})}
+
+
+
+display room adding class \mbox{\hyperlink{classrt_1_1SettingPage}{Setting\+Page}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em true} & \\
+\hline
+{\em false} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string const 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrt_1_1SettingPage_aa11da0dfc2c50201ef1642bfa5babf41}\label{classrt_1_1SettingPage_aa11da0dfc2c50201ef1642bfa5babf41}} 
+\index{rt::SettingPage@{rt::SettingPage}!networkPage@{networkPage}}
+\index{networkPage@{networkPage}!rt::SettingPage@{rt::SettingPage}}
+\doxysubsubsection{\texorpdfstring{networkPage()}{networkPage()}}
+{\footnotesize\ttfamily string const rt\+::\+Setting\+Page\+::network\+Page (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrt_1_1GameData}{Game\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+
+
+build network page class \mbox{\hyperlink{classrt_1_1SettingPage}{Setting\+Page}} params data 
+
+\begin{DoxyReturn}{Returns}
+string const 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrt_1_1SettingPage_a231dd9d30cfa8dc2329048fd027c6302}\label{classrt_1_1SettingPage_a231dd9d30cfa8dc2329048fd027c6302}} 
+\index{rt::SettingPage@{rt::SettingPage}!roomPage@{roomPage}}
+\index{roomPage@{roomPage}!rt::SettingPage@{rt::SettingPage}}
+\doxysubsubsection{\texorpdfstring{roomPage()}{roomPage()}}
+{\footnotesize\ttfamily string const rt\+::\+Setting\+Page\+::room\+Page (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrt_1_1GameData}{Game\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+
+
+build room page class \mbox{\hyperlink{classrt_1_1SettingPage}{Setting\+Page}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string const 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrt_1_1SettingPage_a4a149fb49e745e2c6a02c7c07eeb8f58}\label{classrt_1_1SettingPage_a4a149fb49e745e2c6a02c7c07eeb8f58}} 
+\index{rt::SettingPage@{rt::SettingPage}!run@{run}}
+\index{run@{run}!rt::SettingPage@{rt::SettingPage}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily string const rt\+::\+Setting\+Page\+::run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrt_1_1GameData}{Game\+Data}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classrt_1_1IPage_ac4c179ce2e72523dc07e5d613160aa3b}{rt\+::\+IPage}}.
+
+\mbox{\Hypertarget{classrt_1_1SettingPage_a85f572e4f38879869e4825c6de0cdab2}\label{classrt_1_1SettingPage_a85f572e4f38879869e4825c6de0cdab2}} 
+\index{rt::SettingPage@{rt::SettingPage}!switch\_between\_inputs@{switch\_between\_inputs}}
+\index{switch\_between\_inputs@{switch\_between\_inputs}!rt::SettingPage@{rt::SettingPage}}
+\doxysubsubsection{\texorpdfstring{switch\_between\_inputs()}{switch\_between\_inputs()}}
+{\footnotesize\ttfamily void rt\+::\+Setting\+Page\+::switch\+\_\+between\+\_\+inputs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrt_1_1GameData}{Game\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+client/\+Graphic/include/\mbox{\hyperlink{PageSetting_8hpp}{Page\+Setting.\+hpp}}\item 
+client/\+Graphic/source/\+Pages/\+Settings/\mbox{\hyperlink{Setting_8cpp}{Setting.\+cpp}}\item 
+client/\+Graphic/source/\+Pages/\+Settings/\mbox{\hyperlink{SettingNetwork_8cpp}{Setting\+Network.\+cpp}}\item 
+client/\+Graphic/source/\+Pages/\+Settings/\mbox{\hyperlink{SettingRooms_8cpp}{Setting\+Rooms.\+cpp}}\end{DoxyCompactItemize}

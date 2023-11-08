@@ -1,0 +1,98 @@
+\hypertarget{global_8hpp}{}\doxysection{client/include/global.hpp File Reference}
+\label{global_8hpp}\index{client/include/global.hpp@{client/include/global.hpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structrt_1_1GameData}{rt\+::\+Game\+Data}}
+\begin{DoxyCompactList}\small\item\em create IPgae class \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacert}{rt}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{global_8hpp_ad27df8516d357659fb3181edcda549ab}{FRAMERATE}}~90
+\item 
+\#define \mbox{\hyperlink{global_8hpp_a241aeeb764887ae5e3de58b98f04b16d}{WIDTH}}~1100
+\item 
+\#define \mbox{\hyperlink{global_8hpp_aed89bd71aee8be823e8a20ec4e093c1e}{HEIGHT}}~600
+\item 
+\#define \mbox{\hyperlink{global_8hpp_ac0c59c3fdcd8c8908b2db61f0eb5c218}{SERVER\+\_\+\+WIDTH}}~200
+\item 
+\#define \mbox{\hyperlink{global_8hpp_a1fee1564b8adc45bd394372ee02fde6b}{SERVER\+\_\+\+HEIGHT}}~100
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacert_a08f089eb1262b0c30a2825e3d07b4e49}{rt\+::\+Key\+Event}} \{ \newline
+\mbox{\hyperlink{namespacert_a08f089eb1262b0c30a2825e3d07b4e49a3537ec11ec572aa69711a8fd8f146b4e}{rt\+::\+UNDEFINED}} = 0
+, \mbox{\hyperlink{namespacert_a08f089eb1262b0c30a2825e3d07b4e49a4beff8b2946c958b0cad5e3150b11a5a}{rt\+::\+Hover}} = 1
+, \mbox{\hyperlink{namespacert_a08f089eb1262b0c30a2825e3d07b4e49abaa9c833d4a5d3a726c8c95923261b6a}{rt\+::\+Just\+Clicked}} = 2
+, \mbox{\hyperlink{namespacert_a08f089eb1262b0c30a2825e3d07b4e49a7cd2e49c4c4a2ca9d677347d13085717}{rt\+::\+Clicking}} = 3
+, \newline
+\mbox{\hyperlink{namespacert_a08f089eb1262b0c30a2825e3d07b4e49a4b3f36791a0dd3320d0677f969bf5084}{rt\+::\+Clicked}} = 4
+ \}
+\begin{DoxyCompactList}\small\item\em create enum \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44f}{rt\+::\+Event}} \{ \newline
+\mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44fab810918a0b927865e828fd42f3d5208e}{rt\+::\+Close}} = 0
+, \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44fa18590476afee78ddbbffa87ee8905ccd}{rt\+::\+Up}} = 1
+, \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44fae1153c80f966c6b11af248d8463633f4}{rt\+::\+Down}} = 2
+, \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44fa75deedfcd151bf785b5678d5cbcc42fe}{rt\+::\+Left}} = 3
+, \newline
+\mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44fa76d176fdee5bdd36ef7ea8cf1cf6806b}{rt\+::\+Right}} = 4
+, \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44fab01e5a7f7f9dad9359844d016484044b}{rt\+::\+Space}} = 5
+, \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44fa4e29d49cc0406c4b59f236d371e5c8ca}{rt\+::\+Mouse\+Left}} = 6
+, \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44fa7b19e1df628e2f67fe0e5a4aee9b3b88}{rt\+::\+UNKNOWN}} = 7
+ \}
+\item 
+enum \mbox{\hyperlink{namespacert_a63fba6cbd2f6d153bb264fff63af30d2}{rt\+::\+Connexion}} \{ \mbox{\hyperlink{namespacert_a63fba6cbd2f6d153bb264fff63af30d2a6b70d2b77b6c6506ac16b815ed91651a}{rt\+::\+Disconnected}} = 0
+, \mbox{\hyperlink{namespacert_a63fba6cbd2f6d153bb264fff63af30d2a3503f544f8186f8f191cc0566636a464}{rt\+::\+Connect\+Request}} = 1
+, \mbox{\hyperlink{namespacert_a63fba6cbd2f6d153bb264fff63af30d2aecf40b9d2ab25df54285f470b53e79ec}{rt\+::\+Waiting\+Response}} = 2
+, \mbox{\hyperlink{namespacert_a63fba6cbd2f6d153bb264fff63af30d2ad1cb0861a1391252413736f76c3e91c7}{rt\+::\+Connected}} = 3
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{global_8hpp_ad27df8516d357659fb3181edcda549ab}\label{global_8hpp_ad27df8516d357659fb3181edcda549ab}} 
+\index{global.hpp@{global.hpp}!FRAMERATE@{FRAMERATE}}
+\index{FRAMERATE@{FRAMERATE}!global.hpp@{global.hpp}}
+\doxysubsubsection{\texorpdfstring{FRAMERATE}{FRAMERATE}}
+{\footnotesize\ttfamily \#define FRAMERATE~90}
+
+\mbox{\Hypertarget{global_8hpp_aed89bd71aee8be823e8a20ec4e093c1e}\label{global_8hpp_aed89bd71aee8be823e8a20ec4e093c1e}} 
+\index{global.hpp@{global.hpp}!HEIGHT@{HEIGHT}}
+\index{HEIGHT@{HEIGHT}!global.hpp@{global.hpp}}
+\doxysubsubsection{\texorpdfstring{HEIGHT}{HEIGHT}}
+{\footnotesize\ttfamily \#define HEIGHT~600}
+
+\mbox{\Hypertarget{global_8hpp_a1fee1564b8adc45bd394372ee02fde6b}\label{global_8hpp_a1fee1564b8adc45bd394372ee02fde6b}} 
+\index{global.hpp@{global.hpp}!SERVER\_HEIGHT@{SERVER\_HEIGHT}}
+\index{SERVER\_HEIGHT@{SERVER\_HEIGHT}!global.hpp@{global.hpp}}
+\doxysubsubsection{\texorpdfstring{SERVER\_HEIGHT}{SERVER\_HEIGHT}}
+{\footnotesize\ttfamily \#define SERVER\+\_\+\+HEIGHT~100}
+
+\mbox{\Hypertarget{global_8hpp_ac0c59c3fdcd8c8908b2db61f0eb5c218}\label{global_8hpp_ac0c59c3fdcd8c8908b2db61f0eb5c218}} 
+\index{global.hpp@{global.hpp}!SERVER\_WIDTH@{SERVER\_WIDTH}}
+\index{SERVER\_WIDTH@{SERVER\_WIDTH}!global.hpp@{global.hpp}}
+\doxysubsubsection{\texorpdfstring{SERVER\_WIDTH}{SERVER\_WIDTH}}
+{\footnotesize\ttfamily \#define SERVER\+\_\+\+WIDTH~200}
+
+\mbox{\Hypertarget{global_8hpp_a241aeeb764887ae5e3de58b98f04b16d}\label{global_8hpp_a241aeeb764887ae5e3de58b98f04b16d}} 
+\index{global.hpp@{global.hpp}!WIDTH@{WIDTH}}
+\index{WIDTH@{WIDTH}!global.hpp@{global.hpp}}
+\doxysubsubsection{\texorpdfstring{WIDTH}{WIDTH}}
+{\footnotesize\ttfamily \#define WIDTH~1100}
+

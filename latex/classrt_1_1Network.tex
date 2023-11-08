@@ -1,0 +1,77 @@
+\hypertarget{classrt_1_1Network}{}\doxysection{rt\+::Network Class Reference}
+\label{classrt_1_1Network}\index{rt::Network@{rt::Network}}
+
+
+{\ttfamily \#include $<$Network.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrt_1_1Network_a020146f936af3e6d742a426c55e8ba22}{Network}} (\mbox{\hyperlink{structrt_1_1GameData}{Game\+Data}} \&data)
+\item 
+\mbox{\hyperlink{classrt_1_1Network_a95fb435e2a9f0a6d6099a76fb3c3d438}{$\sim$\+Network}} (void)
+\item 
+bool \mbox{\hyperlink{classrt_1_1Network_a3dedd06a4225a606ed7313a0ff3f2f33}{connect}} (std\+::string const \&address, std\+::string const \&port)
+\item 
+void \mbox{\hyperlink{classrt_1_1Network_a4cecd50b14f748497a3259b1aa6c6499}{send}} (std\+::string const \&msg)
+\item 
+std\+::string const \mbox{\hyperlink{classrt_1_1Network_a79d2672713e198c922b9db43726427f0}{recv}} (void)
+\item 
+void \mbox{\hyperlink{classrt_1_1Network_ac5275cfbcfc8c555537f2e7c2130b22c}{trait\+\_\+response}} (std\+::string const \&server\+Response)
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classrt_1_1Network_a217d4d8a1f3817050d2cb8f1f6cd81c3}{split}} (std\+::string const \&str, std\+::string const \&sep)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrt_1_1Network_a020146f936af3e6d742a426c55e8ba22}\label{classrt_1_1Network_a020146f936af3e6d742a426c55e8ba22}} 
+\index{rt::Network@{rt::Network}!Network@{Network}}
+\index{Network@{Network}!rt::Network@{rt::Network}}
+\doxysubsubsection{\texorpdfstring{Network()}{Network()}}
+{\footnotesize\ttfamily Network\+::\+Network (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrt_1_1GameData}{Game\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrt_1_1Network_a95fb435e2a9f0a6d6099a76fb3c3d438}\label{classrt_1_1Network_a95fb435e2a9f0a6d6099a76fb3c3d438}} 
+\index{rt::Network@{rt::Network}!````~Network@{$\sim$Network}}
+\index{````~Network@{$\sim$Network}!rt::Network@{rt::Network}}
+\doxysubsubsection{\texorpdfstring{$\sim$Network()}{~Network()}}
+{\footnotesize\ttfamily Network\+::$\sim$\+Network (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrt_1_1Network_a3dedd06a4225a606ed7313a0ff3f2f33}\label{classrt_1_1Network_a3dedd06a4225a606ed7313a0ff3f2f33}} 
+\index{rt::Network@{rt::Network}!connect@{connect}}
+\index{connect@{connect}!rt::Network@{rt::Network}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily bool Network\+::connect (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{address,  }\item[{std\+::string const \&}]{port }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrt_1_1Network_a79d2672713e198c922b9db43726427f0}\label{classrt_1_1Network_a79d2672713e198c922b9db43726427f0}} 
+\index{rt::Network@{rt::Network}!recv@{recv}}
+\index{recv@{recv}!rt::Network@{rt::Network}}
+\doxysubsubsection{\texorpdfstring{recv()}{recv()}}
+{\footnotesize\ttfamily string const Network\+::recv (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrt_1_1Network_a4cecd50b14f748497a3259b1aa6c6499}\label{classrt_1_1Network_a4cecd50b14f748497a3259b1aa6c6499}} 
+\index{rt::Network@{rt::Network}!send@{send}}
+\index{send@{send}!rt::Network@{rt::Network}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily void Network\+::send (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{msg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrt_1_1Network_a217d4d8a1f3817050d2cb8f1f6cd81c3}\label{classrt_1_1Network_a217d4d8a1f3817050d2cb8f1f6cd81c3}} 
+\index{rt::Network@{rt::Network}!split@{split}}
+\index{split@{split}!rt::Network@{rt::Network}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Network\+::split (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{str,  }\item[{std\+::string const \&}]{sep }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrt_1_1Network_ac5275cfbcfc8c555537f2e7c2130b22c}\label{classrt_1_1Network_ac5275cfbcfc8c555537f2e7c2130b22c}} 
+\index{rt::Network@{rt::Network}!trait\_response@{trait\_response}}
+\index{trait\_response@{trait\_response}!rt::Network@{rt::Network}}
+\doxysubsubsection{\texorpdfstring{trait\_response()}{trait\_response()}}
+{\footnotesize\ttfamily void Network\+::trait\+\_\+response (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{server\+Response }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+client/\+Network/include/\mbox{\hyperlink{Network_8hpp}{Network.\+hpp}}\item 
+client/\+Network/source/\mbox{\hyperlink{Network_8cpp}{Network.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,94 @@
+\hypertarget{server_8hpp_source}{}\doxysection{server.\+hpp}
+\label{server_8hpp_source}\index{server/include/server.hpp@{server/include/server.hpp}}
+\mbox{\hyperlink{server_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/CPP-\/500-\/COT-\/5-\/1-\/rtype-\/omer.adjallala}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ server}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ SERVER\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ SERVER\_HPP\_}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{lib_8hpp}{lib.hpp}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{tools_8hpp}{tools.hpp}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{game_8hpp}{game.hpp}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }\mbox{\hyperlink{namespacegame}{game}};}
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ namespace\ }\mbox{\hyperlink{namespacetools}{tools}};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceserver}{server}}\ \{}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classserver_1_1Network}{Network}}\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classserver_1_1Network}{Network}}(boost::asio::io\_service\ \&io\_service,\ \textcolor{keywordtype}{int}\ port);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classserver_1_1Network_ae8767ba89bfd336fff731e5e62dc21c1}{GameLoop}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classserver_1_1Network_abd582eb8625fc26bc09ad5c1abdf237c}{manageClient}}(std::string\ message);}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classserver_1_1Network_a634a43f2ee67f263b36a694db580dc05}{getNumberofClient}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classserver_1_1Network_a41081fa994b7c03ceb6358f09d476419}{getEntityID}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classserver_1_1Network_ac73a7a8f8f30a542b9affbd8355d2ce7}{addEntity}}(\textcolor{keywordtype}{int}\ x);}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classserver_1_1Network_a4c7a8ac6aedd7147b424e47420ce1b99}{moveEnnemies}}();}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classserver_1_1Network_ab2aff71fcbb72aa8bc4ef0135f480172}{checkEnnemyDeath}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classserver_1_1Network_a0c027abe6d5f68fcab6e511e47009bf2}{isInGame}};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classserver_1_1Network_ab68479f03e453fb39944188d44e201d5}{DeleteMonsters}}(std::unique\_ptr<game::IMonster>\ \&monster);}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classserver_1_1Network_ab3fdca9f475ad01797d9cadb0c71e23c}{setNumberOfClient}}(\textcolor{keywordtype}{int}\ x);}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<boost::asio::ip::udp::endpoint>\ \mbox{\hyperlink{classserver_1_1Network_a56e1ac7603f89b40d41d7517c4e6940f}{getClientEndpoints}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<player>\ \mbox{\hyperlink{classserver_1_1Network_a3713556e40979c6025d574d075f06e13}{\_players}};}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ boost::asio::ip::udp::socket\ \mbox{\hyperlink{classserver_1_1Network_a1fda2918fd9979d31bb7ba9eb480b53e}{server\_socket}};}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classserver_1_1Network_a0daf1ba25818db3770392204f122c89c}{handleSendMessage}}(std::string\ message,\ \textcolor{keyword}{const}\ boost::system::error\_code\&\ error,\ std::size\_t\ bytes);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classserver_1_1Network_a7a4e19cdb4bf0c7ecf82baa643831492}{\string~Network}}();}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ \ Communication::tools\ com;}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<std::thread>\ handleClient;}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ entityID;}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ std::thread\ \mbox{\hyperlink{namespacegame}{game}};}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<std::string>\ currentMonster;}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<std::unique\_ptr<game::IMonster>>\ Monsters;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtools_1_1ThreadPoolPlayer}{tools::ThreadPoolPlayer}}\ threadPool;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<boost::asio::ip::udp::endpoint>\ Endpoints;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ boost::asio::ip::udp::endpoint\ clientEndpoint;}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ message[1024];}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ receiveMessage(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ numberOfClients;}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ handleReceiveMessage(\textcolor{keyword}{const}\ boost::system::error\_code\&\ error,\ std::size\_t\ bytes,\ boost::asio::ip::udp::endpoint\ \_clientEndpoint);}
+\DoxyCodeLine{00055\ \ \ \ \ \};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{classCommunication}{Communication}}\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{namespaceserver_1_1Communication_a49cea4c005a7f5f6017b4c29ac378f78}{Commande}}\ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespaceserver_1_1Communication_a49cea4c005a7f5f6017b4c29ac378f78a455fc17664dcc5e41164cbcfb8317bf1}{connect}},}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespaceserver_1_1Communication_a49cea4c005a7f5f6017b4c29ac378f78a3b8fe4ca6b51a446fc2e138a1e0aac8d}{connected}},}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{namespacetools}{tools}}\ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_ab7c047cd179275c5503fd4d90b7472b3}{tools}}();}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_aac4c343ca58ae22b7be26faa14565c6a}{\string~tools}}();}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_a028c773e6261405648a0f0d4467af914}{packMessage}}(std::string\ message);}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_a00bfb65c576d31f944babf4c9c0ff654}{checkRequest}}(std::string\ request,\ \mbox{\hyperlink{classserver_1_1Network}{Network}}\ \&net,\ boost::asio::ip::udp::endpoint\ endpoint);}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_ae160bf270689c977848584869c21601a}{isRequest}}(std::string\ request);}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_a0d370cdc13372994ec1dfaf0a7d6f3c8}{treatRequest}}(std::vector<std::string>\ request,\ \mbox{\hyperlink{classserver_1_1Network}{Network}}\ \&net,\ boost::asio::ip::udp::endpoint\ endpoint);}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_ae24d0a26bce5fedabf90bb4fe998c03d}{ConnectRequest}}(std::vector<std::string>\ cmds,\ \mbox{\hyperlink{classserver_1_1Network}{Network}}\ \&net,\ boost::asio::ip::udp::endpoint\ endpoint);}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_aed01ac99fee8f8d545d7a4e53fd73a9d}{playersRequest}}(std::vector<std::string>\ cmds,\ \mbox{\hyperlink{classserver_1_1Network}{Network}}\ \&net,\ boost::asio::ip::udp::endpoint\ endpoint);}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_ae8dec36e14b3838f6671954a9198c72d}{moveRequest}}(std::vector<std::string>\ cmds,\ \mbox{\hyperlink{classserver_1_1Network}{Network}}\ \&net,\ boost::asio::ip::udp::endpoint\ endpoint);}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_ae36bf283ff94113737a464023ce28427}{sendEnnemiesPos}}(std::vector<std::unique\_ptr<game::IMonster>>\ \&Monsters,\ \mbox{\hyperlink{classserver_1_1Network}{Network}}\ \&net);}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_a5b36dc4805c0ce9ce1f8a4e94d947492}{sendDeadEnnemies}}(std::unique\_ptr<game::IMonster>\ \&monster,\ \mbox{\hyperlink{classserver_1_1Network}{Network}}\ \&net);}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_a60f76b24ebc8c978f80b375a72c1a554}{givePosition}}(\textcolor{keywordtype}{double}\ x,\ \textcolor{keywordtype}{double}\ y,\ \mbox{\hyperlink{classserver_1_1Network}{Network}}\ \&net,\ boost::asio::ip::udp::endpoint\ endpointm,\ std::vector<player>\ \&players);}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_a28bef648077f670de0142e1748309fc5}{packConnected}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color);}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_abcb644eb42f6fb3c60df61ec25972ac1}{is\_ClientEndpoint}}(boost::asio::ip::udp::endpoint\ otherEnpoint,}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<boost::asio::ip::udp::endpoint>\ Endpoints);}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_af790b82a6d7ac2c4914de6bb6af4652a}{movePlayerInDown}}(boost::asio::ip::udp::endpoint\ endpoint,\ std::vector<player>\ \&players,\ \mbox{\hyperlink{classserver_1_1Network}{Network}}\ \&net);}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_a37771031399f9c66c9c22b331bc6c193}{movePlayerInUp}}(boost::asio::ip::udp::endpoint\ endpoint,\ std::vector<player>\ \&players,\ \mbox{\hyperlink{classserver_1_1Network}{Network}}\ \&net);}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_a2e70af5f421c2be21719901989ec2de9}{movePlayerInLeft}}(boost::asio::ip::udp::endpoint\ endpoint,\ std::vector<player>\ \&players,\ \mbox{\hyperlink{classserver_1_1Network}{Network}}\ \&net);}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_afff780a6c4be1b201dbac2b0e5e30426}{movePlayerInRight}}(boost::asio::ip::udp::endpoint\ endpoint,\ std::vector<player>\ \&players,\ \mbox{\hyperlink{classserver_1_1Network}{Network}}\ \&net);}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_ad474232f2dca35f1f478802bfb97b7e3}{notifytoClients}}(boost::asio::ip::udp::socket\ \&serverSocket,\ std::string\ message,\ std::vector<boost::asio::ip::udp::endpoint>\ endpoints);}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_a5e194196bcc965527ca72c1cd45c4b7b}{is\_Connected}}(std::string\ name,\ std::vector<player>\ players);}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classserver_1_1Communication_1_1tools_a58b1f55e0b706c74143be820f363b4c8}{WriteMessage}}(std::string\ Message,boost::asio::ip::udp::socket\ \&serverSocket,\ boost::asio::ip::udp::endpoint\ endpoint);}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ handleSendMessage(std::string\ message,\ \textcolor{keyword}{const}\ boost::system::error\_code\&\ error,\ std::size\_t\ bytes);}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00089\ \ \ \ \ \}}
+\DoxyCodeLine{00090\ \}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

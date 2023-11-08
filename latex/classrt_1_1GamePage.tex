@@ -1,0 +1,300 @@
+\hypertarget{classrt_1_1GamePage}{}\doxysection{rt\+::Game\+Page Class Reference}
+\label{classrt_1_1GamePage}\index{rt::GamePage@{rt::GamePage}}
+
+
+create Gamepage class  
+
+
+
+
+{\ttfamily \#include $<$Page\+Game.\+hpp$>$}
+
+Inheritance diagram for rt\+::Game\+Page\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classrt_1_1GamePage}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrt_1_1GamePage_ade033c9cfabac3b19bba1c17c1671358}{Game\+Page}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window, \mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44f}{Event}} const \&my\+Event)
+\begin{DoxyCompactList}\small\item\em Construct a new Game Page\+:\+: Game Page object class \mbox{\hyperlink{classrt_1_1GamePage}{Game\+Page}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrt_1_1GamePage_a72c361f9f8c7c409d9c3a298e1d722d2}{$\sim$\+Game\+Page}} (void)=default
+\item 
+void \mbox{\hyperlink{classrt_1_1GamePage_a34dac45561174f251d25e7ba510edb90}{load\+\_\+level}} (void)
+\begin{DoxyCompactList}\small\item\em load file levels class \mbox{\hyperlink{classrt_1_1GamePage}{Game\+Page}} \end{DoxyCompactList}\item 
+std\+::string const \mbox{\hyperlink{classrt_1_1GamePage_a6703f02dfaccfed2ebca7049633a6305}{run}} (\mbox{\hyperlink{structrt_1_1GameData}{Game\+Data}} \&data)
+\begin{DoxyCompactList}\small\item\em run game class \mbox{\hyperlink{classrt_1_1GamePage}{Game\+Page}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrt_1_1GamePage_a8fdad347d80f7120ed8e6f8a51ec0437}{add\+\_\+player}} (int const elem\+Id)
+\item 
+void \mbox{\hyperlink{classrt_1_1GamePage_adda91d8cf9e4cf7d5319a3f65d5c10e5}{draw\+\_\+all\+\_\+element}} (void)
+\begin{DoxyCompactList}\small\item\em display game elements class \mbox{\hyperlink{classrt_1_1GamePage}{Game\+Page}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrt_1_1GamePage_a6186b0335353aa46dec053de0305738c}{object\+\_\+disparution}} (std\+::queue$<$ std\+::string $>$ \&requests)
+\item 
+void \mbox{\hyperlink{classrt_1_1GamePage_a9446b58f025dccc0f7e50729a50f3977}{generate\+\_\+enemy}} (std\+::queue$<$ std\+::string $>$ \&requests)
+\item 
+bool \mbox{\hyperlink{classrt_1_1GamePage_af2fde95b23b112ff1844909ff7109325}{player\+\_\+colision}} (std\+::queue$<$ std\+::string $>$ \&requests)
+\item 
+bool \mbox{\hyperlink{classrt_1_1GamePage_a90e24201a20dc53594de38441542f2e4}{enemy\+\_\+colision}} (std\+::queue$<$ std\+::string $>$ \&requests)
+\item 
+void \mbox{\hyperlink{classrt_1_1GamePage_a66659b04f96b382361d800890be1c5f4}{remove\+\_\+useless\+\_\+data}} (std\+::queue$<$ std\+::string $>$ \&requests)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classrt_1_1APage}{rt\+::\+APage}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrt_1_1APage_a729b3c00d9a122e2a8610e2f486d9123}{APage}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window)
+\item 
+virtual \mbox{\hyperlink{classrt_1_1APage_ae3c8e85c5ab782bcaee5884fd7f80759}{$\sim$\+APage}} (void)=default
+\item 
+void \mbox{\hyperlink{classrt_1_1APage_ab01deb5b25189af2f69f10ad0f197e31}{set\+Page\+Song}} (std\+::string const \&song\+String)
+\begin{DoxyCompactList}\small\item\em Construct a new Over Page\+:\+: Over Page object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrt_1_1APage_ac9707a984fbc250adb384f8a375abfac}{stop\+Song}} (void)
+\begin{DoxyCompactList}\small\item\em Construct a new Over Page\+:\+: Over Page object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classrt_1_1IPage}{rt\+::\+IPage}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classrt_1_1IPage_a8faea6f1e12d30e8106d6b3b93e9a490}{$\sim$\+IPage}} (void)=default
+\item 
+virtual std\+::string const \mbox{\hyperlink{classrt_1_1IPage_ac4c179ce2e72523dc07e5d613160aa3b}{run}} (\mbox{\hyperlink{structrt_1_1GameData}{Game\+Data}} \&data)=0
+\item 
+virtual void \mbox{\hyperlink{classrt_1_1IPage_a51d61b86ab9df855e766d44c8fb758eb}{set\+Page\+Song}} (std\+::string const \&song)=0
+\item 
+virtual void \mbox{\hyperlink{classrt_1_1IPage_abf8504e76bb0b0d96e989833cae4bf4d}{stop\+Song}} (void)=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classrt_1_1Rectangle}{rt\+::\+Rectangle}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_a0c89496ce6470fad61d996763e532ae5}{Rectangle}} (void)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\+:\+: \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_aea61bf50ea67d6425f2b90b4cdce5a9d}{Rectangle}} (sf\+::\+Vector2f const \&rect\+Pos, sf\+::\+Vector2f const \&rect\+Size, std\+::string const \&image\+Src)
+\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_aa76611dcef10f52edc9930b4651a4e25}{Rectangle}} (sf\+::\+Vector2f const \&rect\+Size, std\+::string const \&image\+Src)
+\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_a09e8afee4e0402ab41a9549f91b9a17e}{Rectangle}} (sf\+::\+Vector2f const \&rect\+Pos, sf\+::\+Vector2f const \&rect\+Size, sf\+::\+Color const \&full\+Color=sf\+::\+Color\+::\+Transparent)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\+:\+: \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} object class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_a61b8c2aa2773c2e9a848a8246257162d}{Rectangle}} (sf\+::\+Vector2f const \&rect\+Size, sf\+::\+Color const \&full\+Color=sf\+::\+Color\+::\+Transparent)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\+:\+: \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} object class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_ae58053dff25ac4166f9b077b9f87f46c}{Rectangle}} (\mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} const \&copy)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\+:\+: \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} object class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \& \mbox{\hyperlink{classrt_1_1Rectangle_a06cb5c195da15d34176f2958bd2d57e1}{operator=}} (\mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} const \&copy)
+\begin{DoxyCompactList}\small\item\em implement equality operator class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_a2b597a0332f7df2e0928f2271c322216}{$\sim$\+Rectangle}} (void)=default
+\item 
+void \mbox{\hyperlink{classrt_1_1Rectangle_a8f52d79b359905cb5fc89dde03242bf1}{restore}} (void)
+\begin{DoxyCompactList}\small\item\em restaure position \end{DoxyCompactList}\item 
+sf\+::\+Rectangle\+Shape \& \mbox{\hyperlink{classrt_1_1Rectangle_ad5d8f849f3bf6535cab087884f89ca73}{get}} (void)
+\begin{DoxyCompactList}\small\item\em get value \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrt_1_1Rectangle_ab12a29fa2412155201aceca3e4a80c1d}{draw}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window) const
+\begin{DoxyCompactList}\small\item\em draw window class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classrt_1_1Rectangle_aa1322f08da61371ccc76575c01402593}{get\+Survol}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window) const
+\begin{DoxyCompactList}\small\item\em check condition if there is hover class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classrt_1_1Rectangle_a90749bf84281ffe482c477f88c7b75fa}{get\+Clicked}} (shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window) const
+\begin{DoxyCompactList}\small\item\em check condition if there in clicking class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+sf\+::\+Vector2f const \mbox{\hyperlink{classrt_1_1Rectangle_afa023a2f94fd7fff15d0427177b406ed}{get\+Position}} (void) const
+\begin{DoxyCompactList}\small\item\em get position class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrt_1_1Rectangle_a16d8e9c5aa7b70fe74d8c8c54ca110cc}{set\+Position}} (sf\+::\+Vector2f const \&position)
+\begin{DoxyCompactList}\small\item\em set position class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+sf\+::\+Vector2f const \mbox{\hyperlink{classrt_1_1Rectangle_a637621d54453a85540a547212b38ed38}{get\+Size}} (void) const
+\begin{DoxyCompactList}\small\item\em get position class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrt_1_1Rectangle_ac146e1ab2a12ffb3126f6c2e536ee0cb}{set\+Size}} (sf\+::\+Vector2f const \&size)
+\begin{DoxyCompactList}\small\item\em set position class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrt_1_1Rectangle_ab2dd77276a4e2f31081b84c6f94cd182}{set\+Song}} (string const \&song\+String)
+\item 
+void \mbox{\hyperlink{classrt_1_1Rectangle_a254ac0c81b3e526e351c3891562b24ab}{stop\+Song}} (void)
+\item 
+bool \mbox{\hyperlink{classrt_1_1Rectangle_a93e455bb9e9f644d305c11386a3e9929}{colision}} (\mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} const \&rectangle)
+\begin{DoxyCompactList}\small\item\em update position class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classrt_1_1Rectangle_aadc0c367dacc403258acb033d4cf7b53}{colision}} (sf\+::\+Vector2f const \&position)
+\begin{DoxyCompactList}\small\item\em update position class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classrt_1_1AObject}{rt\+::\+AObject}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrt_1_1AObject_ae9be2b861738e9b43f6ccf8bdb1ab0e0}{AObject}} (void)
+\item 
+\mbox{\hyperlink{classrt_1_1AObject_a89d0cfe6bb89b27e874d0ab695b4a6a1}{AObject}} (int const id)
+\item 
+\mbox{\hyperlink{classrt_1_1AObject_aa0a5a0db9cc6c0ffbf10006110ea4494}{$\sim$\+AObject}} (void)=default
+\item 
+std\+::string \mbox{\hyperlink{classrt_1_1AObject_a70bd424f0cdf999ac212569d1791ea3d}{get\+Id}} (void)
+\item 
+virtual void \mbox{\hyperlink{classrt_1_1AObject_a230e38d7506e5317dba522a481da5c9c}{draw}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window) const =0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classrt_1_1IObject}{rt\+::\+IObject}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classrt_1_1IObject_a1896cae189c15394cd5b563119b521cc}{$\sim$\+IObject}} (void)=default
+\item 
+virtual std\+::string \mbox{\hyperlink{classrt_1_1IObject_afad8311268e4475799b3b89188366fce}{get\+Id}} (void)=0
+\item 
+virtual void \mbox{\hyperlink{classrt_1_1IObject_ac2efb29634d6dd58f5fb4cf47a30e189}{draw}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window) const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{classrt_1_1IPage}{rt\+::\+IPage}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \mbox{\hyperlink{classrt_1_1IPage_a8962a3d2fd703798257dc4e880249db1}{\+\_\+window}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{classrt_1_1Rectangle}{rt\+::\+Rectangle}}}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Rectangle\+Shape \mbox{\hyperlink{classrt_1_1Rectangle_ae1bfd0960100ea8c91012beb3b18ea66}{\+\_\+rect}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classrt_1_1Rectangle_a0dc69baa1c0dfaec4a69f9eefa6a0747}{\+\_\+position}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classrt_1_1Rectangle_a8cd19b08de5c56a2973b7446cf5651ef}{\+\_\+size}}
+\item 
+sf\+::\+Texture \mbox{\hyperlink{classrt_1_1Rectangle_a6709c49d1c553d29c10c15cc0b25eec8}{\+\_\+texture}}
+\item 
+sf\+::\+Color \mbox{\hyperlink{classrt_1_1Rectangle_afe3223b465fd87a9f6c16d8e3ed5e99a}{\+\_\+backgroud\+Color}} = sf\+::\+Color\+::\+Transparent
+\item 
+\mbox{\hyperlink{namespacert_a08f089eb1262b0c30a2825e3d07b4e49}{Key\+Event}} \mbox{\hyperlink{classrt_1_1Rectangle_a5af04fe37e47c6d6687a2b23f8e59324}{\+\_\+current\+Event}}
+\item 
+bool \mbox{\hyperlink{classrt_1_1Rectangle_a6d0780a906a4185899bae4fef75174d6}{\+\_\+last\+Click}} = false
+\item 
+sf\+::\+Music \mbox{\hyperlink{classrt_1_1Rectangle_a7431b0d8b56772e7ce72bb55adc6b32c}{\+\_\+song}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{classrt_1_1IObject}{rt\+::\+IObject}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classrt_1_1IObject_adf9d37fb92ac94395ecac48ae1e5d7ce}{\+\_\+id}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classrt_1_1IPage}{rt\+::\+IPage}}}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::unique\+\_\+ptr$<$ sf\+::\+Music $>$ \mbox{\hyperlink{classrt_1_1IPage_a0982ae3d9127d5439d698f8237788d3f}{\+\_\+page\+Song}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+create Gamepage class 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrt_1_1GamePage_ade033c9cfabac3b19bba1c17c1671358}\label{classrt_1_1GamePage_ade033c9cfabac3b19bba1c17c1671358}} 
+\index{rt::GamePage@{rt::GamePage}!GamePage@{GamePage}}
+\index{GamePage@{GamePage}!rt::GamePage@{rt::GamePage}}
+\doxysubsubsection{\texorpdfstring{GamePage()}{GamePage()}}
+{\footnotesize\ttfamily rt\+::\+Game\+Page\+::\+Game\+Page (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$}]{window,  }\item[{\mbox{\hyperlink{namespacert_a5bd3044db76f2a5c21f3c8eab522a44f}{Event}} const \&}]{my\+Event }\end{DoxyParamCaption})}
+
+
+
+Construct a new Game Page\+:\+: Game Page object class \mbox{\hyperlink{classrt_1_1GamePage}{Game\+Page}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em event} & \\
+\hline
+{\em my\+Event} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrt_1_1GamePage_a72c361f9f8c7c409d9c3a298e1d722d2}\label{classrt_1_1GamePage_a72c361f9f8c7c409d9c3a298e1d722d2}} 
+\index{rt::GamePage@{rt::GamePage}!````~GamePage@{$\sim$GamePage}}
+\index{````~GamePage@{$\sim$GamePage}!rt::GamePage@{rt::GamePage}}
+\doxysubsubsection{\texorpdfstring{$\sim$GamePage()}{~GamePage()}}
+{\footnotesize\ttfamily rt\+::\+Game\+Page\+::$\sim$\+Game\+Page (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrt_1_1GamePage_a8fdad347d80f7120ed8e6f8a51ec0437}\label{classrt_1_1GamePage_a8fdad347d80f7120ed8e6f8a51ec0437}} 
+\index{rt::GamePage@{rt::GamePage}!add\_player@{add\_player}}
+\index{add\_player@{add\_player}!rt::GamePage@{rt::GamePage}}
+\doxysubsubsection{\texorpdfstring{add\_player()}{add\_player()}}
+{\footnotesize\ttfamily void rt\+::\+Game\+Page\+::add\+\_\+player (\begin{DoxyParamCaption}\item[{int const}]{elem\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrt_1_1GamePage_adda91d8cf9e4cf7d5319a3f65d5c10e5}\label{classrt_1_1GamePage_adda91d8cf9e4cf7d5319a3f65d5c10e5}} 
+\index{rt::GamePage@{rt::GamePage}!draw\_all\_element@{draw\_all\_element}}
+\index{draw\_all\_element@{draw\_all\_element}!rt::GamePage@{rt::GamePage}}
+\doxysubsubsection{\texorpdfstring{draw\_all\_element()}{draw\_all\_element()}}
+{\footnotesize\ttfamily void rt\+::\+Game\+Page\+::draw\+\_\+all\+\_\+element (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+display game elements class \mbox{\hyperlink{classrt_1_1GamePage}{Game\+Page}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string const 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrt_1_1GamePage_a90e24201a20dc53594de38441542f2e4}\label{classrt_1_1GamePage_a90e24201a20dc53594de38441542f2e4}} 
+\index{rt::GamePage@{rt::GamePage}!enemy\_colision@{enemy\_colision}}
+\index{enemy\_colision@{enemy\_colision}!rt::GamePage@{rt::GamePage}}
+\doxysubsubsection{\texorpdfstring{enemy\_colision()}{enemy\_colision()}}
+{\footnotesize\ttfamily bool rt\+::\+Game\+Page\+::enemy\+\_\+colision (\begin{DoxyParamCaption}\item[{std\+::queue$<$ std\+::string $>$ \&}]{requests }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrt_1_1GamePage_a9446b58f025dccc0f7e50729a50f3977}\label{classrt_1_1GamePage_a9446b58f025dccc0f7e50729a50f3977}} 
+\index{rt::GamePage@{rt::GamePage}!generate\_enemy@{generate\_enemy}}
+\index{generate\_enemy@{generate\_enemy}!rt::GamePage@{rt::GamePage}}
+\doxysubsubsection{\texorpdfstring{generate\_enemy()}{generate\_enemy()}}
+{\footnotesize\ttfamily void rt\+::\+Game\+Page\+::generate\+\_\+enemy (\begin{DoxyParamCaption}\item[{std\+::queue$<$ std\+::string $>$ \&}]{requests }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrt_1_1GamePage_a34dac45561174f251d25e7ba510edb90}\label{classrt_1_1GamePage_a34dac45561174f251d25e7ba510edb90}} 
+\index{rt::GamePage@{rt::GamePage}!load\_level@{load\_level}}
+\index{load\_level@{load\_level}!rt::GamePage@{rt::GamePage}}
+\doxysubsubsection{\texorpdfstring{load\_level()}{load\_level()}}
+{\footnotesize\ttfamily void rt\+::\+Game\+Page\+::load\+\_\+level (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+load file levels class \mbox{\hyperlink{classrt_1_1GamePage}{Game\+Page}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em levels} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrt_1_1GamePage_a6186b0335353aa46dec053de0305738c}\label{classrt_1_1GamePage_a6186b0335353aa46dec053de0305738c}} 
+\index{rt::GamePage@{rt::GamePage}!object\_disparution@{object\_disparution}}
+\index{object\_disparution@{object\_disparution}!rt::GamePage@{rt::GamePage}}
+\doxysubsubsection{\texorpdfstring{object\_disparution()}{object\_disparution()}}
+{\footnotesize\ttfamily void rt\+::\+Game\+Page\+::object\+\_\+disparution (\begin{DoxyParamCaption}\item[{std\+::queue$<$ std\+::string $>$ \&}]{requests }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrt_1_1GamePage_af2fde95b23b112ff1844909ff7109325}\label{classrt_1_1GamePage_af2fde95b23b112ff1844909ff7109325}} 
+\index{rt::GamePage@{rt::GamePage}!player\_colision@{player\_colision}}
+\index{player\_colision@{player\_colision}!rt::GamePage@{rt::GamePage}}
+\doxysubsubsection{\texorpdfstring{player\_colision()}{player\_colision()}}
+{\footnotesize\ttfamily bool rt\+::\+Game\+Page\+::player\+\_\+colision (\begin{DoxyParamCaption}\item[{std\+::queue$<$ std\+::string $>$ \&}]{requests }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrt_1_1GamePage_a66659b04f96b382361d800890be1c5f4}\label{classrt_1_1GamePage_a66659b04f96b382361d800890be1c5f4}} 
+\index{rt::GamePage@{rt::GamePage}!remove\_useless\_data@{remove\_useless\_data}}
+\index{remove\_useless\_data@{remove\_useless\_data}!rt::GamePage@{rt::GamePage}}
+\doxysubsubsection{\texorpdfstring{remove\_useless\_data()}{remove\_useless\_data()}}
+{\footnotesize\ttfamily void rt\+::\+Game\+Page\+::remove\+\_\+useless\+\_\+data (\begin{DoxyParamCaption}\item[{std\+::queue$<$ std\+::string $>$ \&}]{requests }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrt_1_1GamePage_a6703f02dfaccfed2ebca7049633a6305}\label{classrt_1_1GamePage_a6703f02dfaccfed2ebca7049633a6305}} 
+\index{rt::GamePage@{rt::GamePage}!run@{run}}
+\index{run@{run}!rt::GamePage@{rt::GamePage}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily string const rt\+::\+Game\+Page\+::run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrt_1_1GameData}{Game\+Data}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+run game class \mbox{\hyperlink{classrt_1_1GamePage}{Game\+Page}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em personnages} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string const 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classrt_1_1IPage_ac4c179ce2e72523dc07e5d613160aa3b}{rt\+::\+IPage}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+client/\+Graphic/include/\mbox{\hyperlink{PageGame_8hpp}{Page\+Game.\+hpp}}\item 
+client/\+Graphic/source/\+Pages/\mbox{\hyperlink{Game_8cpp}{Game.\+cpp}}\end{DoxyCompactItemize}

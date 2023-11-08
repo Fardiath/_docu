@@ -1,0 +1,131 @@
+\hypertarget{classgame_1_1asteroids}{}\doxysection{game\+::asteroids Class Reference}
+\label{classgame_1_1asteroids}\index{game::asteroids@{game::asteroids}}
+
+
+{\ttfamily \#include $<$game.\+hpp$>$}
+
+Inheritance diagram for game\+::asteroids\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classgame_1_1asteroids}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1asteroids_a6f76fe56e00a3b8126b6f7db7a97113c}{asteroids}} (int id)
+\item 
+\mbox{\hyperlink{classgame_1_1asteroids_aed97f2483447cbe93f6a957bf8473ae3}{$\sim$asteroids}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgame_1_1AMonster}{game\+::\+AMonster}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classgame_1_1AMonster_ab0887e61589846c32a683f75f50827e8}{$\sim$\+AMonster}} ()
+\item 
+virtual void \mbox{\hyperlink{classgame_1_1AMonster_ae9f21d6636a160362d5be2afca3e4f2b}{set\+Position}} (double x, double y)
+\item 
+virtual void \mbox{\hyperlink{classgame_1_1AMonster_a75bf1ad43c4a75094a7f9919f55f1290}{move\+Ennemy}} (double x)
+\item 
+virtual void \mbox{\hyperlink{classgame_1_1AMonster_a5200bca0c81641bc960020460b5f3f6a}{set\+Monster\+Life}} (int life)
+\item 
+virtual bool \mbox{\hyperlink{classgame_1_1AMonster_a2c8e756cf639d7dfb5bd1dc7cba7861f}{is\+Dead}} (void)
+\item 
+virtual int \mbox{\hyperlink{classgame_1_1AMonster_a3501010c1db2e700405bef43ea6f782e}{get\+Monster\+Life}} () const
+\item 
+virtual void \mbox{\hyperlink{classgame_1_1AMonster_a9b3886b15437f8c7e018ddc99d7b2615}{check\+Collision}} (double x, double y)
+\item 
+virtual std\+::string \mbox{\hyperlink{classgame_1_1AMonster_a99f070d6c76a3199cc50ffe6f79b4f04}{get\+Monster\+Type}} () const
+\item 
+virtual bool \mbox{\hyperlink{classgame_1_1AMonster_a6ff8ea7a2a1efa6f3d107443a57222e0}{is\+Touched}} () const
+\item 
+virtual double \mbox{\hyperlink{classgame_1_1AMonster_a0fb19d5e8dbcef271099f8aa734fade4}{get\+Frequency}} () const
+\item 
+virtual int \mbox{\hyperlink{classgame_1_1AMonster_a82d372bbe36fd4c0c606abb4db817f29}{get\+ID}} () const
+\item 
+virtual std\+::tuple$<$ double, double $>$ \mbox{\hyperlink{classgame_1_1AMonster_a283f192982cfbf81a28570c479052495}{get\+Monster\+Position}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgame_1_1IMonster}{game\+::\+IMonster}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classgame_1_1IMonster_a9f62b43473c0dd2669ec888396f1d065}{$\sim$\+IMonster}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classgame_1_1IMonster_ae0784d8c8bae81ade627a812a4bf9406}{set\+Position}} (double x, double y)=0
+\item 
+virtual void \mbox{\hyperlink{classgame_1_1IMonster_a67b3894c822bca9e35d5cde65d8a7114}{move\+Ennemy}} (double x)=0
+\item 
+virtual void \mbox{\hyperlink{classgame_1_1IMonster_a3e0c9a947352302aaf2af32f83869453}{set\+Monster\+Life}} (int life)=0
+\item 
+virtual int \mbox{\hyperlink{classgame_1_1IMonster_a07310615585c13fc9fe526201bf10421}{get\+Monster\+Life}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classgame_1_1IMonster_a7ebd16fb11cb05a33d8822d19050ce65}{check\+Collision}} (double x, double y)=0
+\item 
+virtual std\+::string \mbox{\hyperlink{classgame_1_1IMonster_a6f0536e6f11eb0c854d793dcf2c0be40}{get\+Monster\+Type}} () const =0
+\item 
+virtual int \mbox{\hyperlink{classgame_1_1IMonster_afdf821842e757432ab3434bc5982c52f}{get\+ID}} () const =0
+\item 
+virtual bool \mbox{\hyperlink{classgame_1_1IMonster_a14f5549baaf7a9948ecfe0ebb14da03e}{is\+Touched}} () const =0
+\item 
+virtual bool \mbox{\hyperlink{classgame_1_1IMonster_a4948266b9e0d7e5087c6085d11873d14}{is\+Dead}} (void)=0
+\item 
+virtual double \mbox{\hyperlink{classgame_1_1IMonster_afa5d716661ad5f8157158efdcc4abe81}{get\+Frequency}} () const =0
+\item 
+virtual std\+::tuple$<$ double, double $>$ \mbox{\hyperlink{classgame_1_1IMonster_a72da44dd0cdac1f4cab43beb9983aa75}{get\+Monster\+Position}} () const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgame_1_1AMonster}{game\+::\+AMonster}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classgame_1_1AMonster_afc00bf0fe8cb3d001c1bf85760d991f7}{\+\_\+\+Monster\+Type}}
+\item 
+double \mbox{\hyperlink{classgame_1_1AMonster_a4cd7899345ce6fb9d88b3f90a765532a}{frequency}}
+\item 
+double \mbox{\hyperlink{classgame_1_1AMonster_adc99f112e8cdcf7e2c72dc23e760e2ef}{\+\_\+x}}
+\item 
+double \mbox{\hyperlink{classgame_1_1AMonster_a698718f21b4aeb4fa70a4824c2737dcf}{\+\_\+y}}
+\item 
+bool \mbox{\hyperlink{classgame_1_1AMonster_ae1c49993e7c8a38a96b56e4fe98adbb8}{is\+\_\+touched}}
+\item 
+bool \mbox{\hyperlink{classgame_1_1AMonster_af38461334abe2db2ed0b3a122228e1db}{is\+\_\+dead}}
+\item 
+int \mbox{\hyperlink{classgame_1_1AMonster_aa7fa03a000b4036ddee00b73e44b8b40}{\+\_\+id}}
+\item 
+int \mbox{\hyperlink{classgame_1_1AMonster_a77d7e6ab34061d83463d79efdf34328b}{\+\_\+life}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgame_1_1IMonster}{game\+::\+IMonster}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classgame_1_1IMonster_ad5f1804a4782c71d9fe9f61427e3a16a}{\+\_\+\+Monster\+Type}}
+\item 
+double \mbox{\hyperlink{classgame_1_1IMonster_a67fc31ab5857aea6537d72b6a679e639}{frequency}}
+\item 
+double \mbox{\hyperlink{classgame_1_1IMonster_ae817dbfddc6f30e712a4207f966095f7}{\+\_\+x}}
+\item 
+double \mbox{\hyperlink{classgame_1_1IMonster_a3e4fb4b794d4bf50a39cac9f289d84d2}{\+\_\+y}}
+\item 
+bool \mbox{\hyperlink{classgame_1_1IMonster_aa1f754b847fde41bedf800fed68e935c}{is\+\_\+touched}}
+\item 
+int \mbox{\hyperlink{classgame_1_1IMonster_a02d34153ebf4c629f123ad28c42e9603}{\+\_\+id}}
+\item 
+int \mbox{\hyperlink{classgame_1_1IMonster_aced81902a3ac4b1c984647ec1421644c}{\+\_\+life}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgame_1_1asteroids_a6f76fe56e00a3b8126b6f7db7a97113c}\label{classgame_1_1asteroids_a6f76fe56e00a3b8126b6f7db7a97113c}} 
+\index{game::asteroids@{game::asteroids}!asteroids@{asteroids}}
+\index{asteroids@{asteroids}!game::asteroids@{game::asteroids}}
+\doxysubsubsection{\texorpdfstring{asteroids()}{asteroids()}}
+{\footnotesize\ttfamily game\+::asteroids\+::asteroids (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgame_1_1asteroids_aed97f2483447cbe93f6a957bf8473ae3}\label{classgame_1_1asteroids_aed97f2483447cbe93f6a957bf8473ae3}} 
+\index{game::asteroids@{game::asteroids}!````~asteroids@{$\sim$asteroids}}
+\index{````~asteroids@{$\sim$asteroids}!game::asteroids@{game::asteroids}}
+\doxysubsubsection{\texorpdfstring{$\sim$asteroids()}{~asteroids()}}
+{\footnotesize\ttfamily game\+::asteroids\+::$\sim$asteroids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+server/include/\mbox{\hyperlink{game_8hpp}{game.\+hpp}}\item 
+server/source/\mbox{\hyperlink{asteroids_8cpp}{asteroids.\+cpp}}\end{DoxyCompactItemize}

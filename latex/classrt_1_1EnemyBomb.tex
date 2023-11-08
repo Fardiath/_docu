@@ -1,0 +1,222 @@
+\hypertarget{classrt_1_1EnemyBomb}{}\doxysection{rt\+::Enemy\+Bomb Class Reference}
+\label{classrt_1_1EnemyBomb}\index{rt::EnemyBomb@{rt::EnemyBomb}}
+
+
+enemy class  
+
+
+
+
+{\ttfamily \#include $<$Enemy\+Bomb.\+hpp$>$}
+
+Inheritance diagram for rt\+::Enemy\+Bomb\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classrt_1_1EnemyBomb}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrt_1_1EnemyBomb_a3feab90af72de598b7a5363fb1b29c99}{Enemy\+Bomb}} (void)
+\begin{DoxyCompactList}\small\item\em Construct a new Enemy Person\+:\+: Enemy Person object class Enemy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrt_1_1EnemyBomb_a9409d0fed3e6b21b66801fb65159803c}{$\sim$\+Enemy\+Bomb}} (void)=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classrt_1_1AEnemy}{rt\+::\+AEnemy}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrt_1_1AEnemy_a7158f21669ba707e8b6b6e17167592f9}{AEnemy}} (\mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} const \&rt\+Rect)
+\item 
+virtual \mbox{\hyperlink{classrt_1_1AEnemy_a2a630a73c8508d1c5985371f8db2fdd2}{$\sim$\+AEnemy}} (void)=default
+\item 
+bool \mbox{\hyperlink{classrt_1_1AEnemy_a551450a72bf9236a4b3fdf277f0ecb48}{if\+Visible}} (void) const
+\begin{DoxyCompactList}\small\item\em check condition class Enemy \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrt_1_1AEnemy_a34b0d62bd140510796d2f77f96e7ca02}{react}} (void)
+\begin{DoxyCompactList}\small\item\em add reaction class Animated\+Retcangle \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrt_1_1AEnemy_a4e9ff513ad68d653422ae03cbf4d558e}{draw}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classrt_1_1APersonnage}{rt\+::\+APersonnage}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrt_1_1APersonnage_a7daa55347e55601b0929344a8f5e66db}{APersonnage}} (\mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} const \&rt\+Rect)
+\item 
+virtual \mbox{\hyperlink{classrt_1_1APersonnage_ad9eb749d14ef206e0a37fc4a2fcd578f}{$\sim$\+APersonnage}} (void)=default
+\item 
+float \mbox{\hyperlink{classrt_1_1APersonnage_a61ce7c9eea9dc1f566b30b54d4651b4a}{get\+Life}} (void) const
+\item 
+void \mbox{\hyperlink{classrt_1_1APersonnage_af14148e3d7b70d0b66160efffe2d37f7}{set\+Life}} (float const)
+\item 
+float \mbox{\hyperlink{classrt_1_1APersonnage_a6ae1d489fc435b153992d030adb635df}{get\+Degat}} (void) const
+\item 
+void \mbox{\hyperlink{classrt_1_1APersonnage_aea1e032033b52696631da2e13d5b4e8c}{set\+Degat}} (float const)
+\item 
+virtual void \mbox{\hyperlink{classrt_1_1APersonnage_a6aaac07c6ccba26a4a4cb4563adee2cb}{react}} (void)
+\begin{DoxyCompactList}\small\item\em add reaction class Animated\+Retcangle \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrt_1_1APersonnage_af34ccc62b0c05f3bb1ca18d9b65de8e1}{draw}} (shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classrt_1_1AnimatedRectangle}{rt\+::\+Animated\+Rectangle}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrt_1_1AnimatedRectangle_ae5ab46dc5e42b366eba44d866b420468}{Animated\+Rectangle}} (\mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} const \&rt\+Rect, sf\+::\+Int\+Rect const \&int\+Rect=sf\+::\+Int\+Rect(), sf\+::\+Int\+Rect const \&image\+Limit=sf\+::\+Int\+Rect(), sf\+::\+Vector2f const \&animation\+Sequence=sf\+::\+Vector2f(), float const \&mili\+Delay=0)
+\begin{DoxyCompactList}\small\item\em Construct a new Animated \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\+:\+: Animated \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} object class Animated\+Retcangle. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classrt_1_1AnimatedRectangle_a5119c0140ac65db91de1a7584d71eda8}{$\sim$\+Animated\+Rectangle}} (void)=default
+\item 
+void \mbox{\hyperlink{classrt_1_1AnimatedRectangle_a3339f22f17c0fc948aad4f079cef478c}{set\+Animation}} (sf\+::\+Int\+Rect const \&int\+Rect, sf\+::\+Int\+Rect const \&image\+Limit, sf\+::\+Vector2f const \&animation\+Sequence, float const \&mili\+Delay=0)
+\item 
+virtual bool \mbox{\hyperlink{classrt_1_1AnimatedRectangle_a348130378353a5e1aae88c83f05bad7a}{if\+Visible}} (void) const =0
+\item 
+void \mbox{\hyperlink{classrt_1_1AnimatedRectangle_adc0207d25551d7430221137dfb88c9dd}{move\+Image\+Rect}} (void)
+\begin{DoxyCompactList}\small\item\em move image rect class Animated\+Retcangle \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrt_1_1AnimatedRectangle_a9ca05d7767a7353207c33b9bc398b1ba}{react}} (void)
+\begin{DoxyCompactList}\small\item\em add reaction class Animated\+Retcangle \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classrt_1_1Rectangle}{rt\+::\+Rectangle}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_a0c89496ce6470fad61d996763e532ae5}{Rectangle}} (void)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\+:\+: \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_aea61bf50ea67d6425f2b90b4cdce5a9d}{Rectangle}} (sf\+::\+Vector2f const \&rect\+Pos, sf\+::\+Vector2f const \&rect\+Size, std\+::string const \&image\+Src)
+\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_aa76611dcef10f52edc9930b4651a4e25}{Rectangle}} (sf\+::\+Vector2f const \&rect\+Size, std\+::string const \&image\+Src)
+\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_a09e8afee4e0402ab41a9549f91b9a17e}{Rectangle}} (sf\+::\+Vector2f const \&rect\+Pos, sf\+::\+Vector2f const \&rect\+Size, sf\+::\+Color const \&full\+Color=sf\+::\+Color\+::\+Transparent)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\+:\+: \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} object class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_a61b8c2aa2773c2e9a848a8246257162d}{Rectangle}} (sf\+::\+Vector2f const \&rect\+Size, sf\+::\+Color const \&full\+Color=sf\+::\+Color\+::\+Transparent)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\+:\+: \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} object class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_ae58053dff25ac4166f9b077b9f87f46c}{Rectangle}} (\mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} const \&copy)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}\+:\+: \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} object class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \& \mbox{\hyperlink{classrt_1_1Rectangle_a06cb5c195da15d34176f2958bd2d57e1}{operator=}} (\mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} const \&copy)
+\begin{DoxyCompactList}\small\item\em implement equality operator class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrt_1_1Rectangle_a2b597a0332f7df2e0928f2271c322216}{$\sim$\+Rectangle}} (void)=default
+\item 
+void \mbox{\hyperlink{classrt_1_1Rectangle_a8f52d79b359905cb5fc89dde03242bf1}{restore}} (void)
+\begin{DoxyCompactList}\small\item\em restaure position \end{DoxyCompactList}\item 
+sf\+::\+Rectangle\+Shape \& \mbox{\hyperlink{classrt_1_1Rectangle_ad5d8f849f3bf6535cab087884f89ca73}{get}} (void)
+\begin{DoxyCompactList}\small\item\em get value \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrt_1_1Rectangle_ab12a29fa2412155201aceca3e4a80c1d}{draw}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window) const
+\begin{DoxyCompactList}\small\item\em draw window class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classrt_1_1Rectangle_aa1322f08da61371ccc76575c01402593}{get\+Survol}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window) const
+\begin{DoxyCompactList}\small\item\em check condition if there is hover class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classrt_1_1Rectangle_a90749bf84281ffe482c477f88c7b75fa}{get\+Clicked}} (shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window) const
+\begin{DoxyCompactList}\small\item\em check condition if there in clicking class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+sf\+::\+Vector2f const \mbox{\hyperlink{classrt_1_1Rectangle_afa023a2f94fd7fff15d0427177b406ed}{get\+Position}} (void) const
+\begin{DoxyCompactList}\small\item\em get position class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrt_1_1Rectangle_a16d8e9c5aa7b70fe74d8c8c54ca110cc}{set\+Position}} (sf\+::\+Vector2f const \&position)
+\begin{DoxyCompactList}\small\item\em set position class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+sf\+::\+Vector2f const \mbox{\hyperlink{classrt_1_1Rectangle_a637621d54453a85540a547212b38ed38}{get\+Size}} (void) const
+\begin{DoxyCompactList}\small\item\em get position class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrt_1_1Rectangle_ac146e1ab2a12ffb3126f6c2e536ee0cb}{set\+Size}} (sf\+::\+Vector2f const \&size)
+\begin{DoxyCompactList}\small\item\em set position class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrt_1_1Rectangle_ab2dd77276a4e2f31081b84c6f94cd182}{set\+Song}} (string const \&song\+String)
+\item 
+void \mbox{\hyperlink{classrt_1_1Rectangle_a254ac0c81b3e526e351c3891562b24ab}{stop\+Song}} (void)
+\item 
+bool \mbox{\hyperlink{classrt_1_1Rectangle_a93e455bb9e9f644d305c11386a3e9929}{colision}} (\mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} const \&rectangle)
+\begin{DoxyCompactList}\small\item\em update position class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classrt_1_1Rectangle_aadc0c367dacc403258acb033d4cf7b53}{colision}} (sf\+::\+Vector2f const \&position)
+\begin{DoxyCompactList}\small\item\em update position class \mbox{\hyperlink{classrt_1_1Rectangle}{Rectangle}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classrt_1_1AObject}{rt\+::\+AObject}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrt_1_1AObject_ae9be2b861738e9b43f6ccf8bdb1ab0e0}{AObject}} (void)
+\item 
+\mbox{\hyperlink{classrt_1_1AObject_a89d0cfe6bb89b27e874d0ab695b4a6a1}{AObject}} (int const id)
+\item 
+\mbox{\hyperlink{classrt_1_1AObject_aa0a5a0db9cc6c0ffbf10006110ea4494}{$\sim$\+AObject}} (void)=default
+\item 
+std\+::string \mbox{\hyperlink{classrt_1_1AObject_a70bd424f0cdf999ac212569d1791ea3d}{get\+Id}} (void)
+\item 
+virtual void \mbox{\hyperlink{classrt_1_1AObject_a230e38d7506e5317dba522a481da5c9c}{draw}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window) const =0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classrt_1_1IObject}{rt\+::\+IObject}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classrt_1_1IObject_a1896cae189c15394cd5b563119b521cc}{$\sim$\+IObject}} (void)=default
+\item 
+virtual std\+::string \mbox{\hyperlink{classrt_1_1IObject_afad8311268e4475799b3b89188366fce}{get\+Id}} (void)=0
+\item 
+virtual void \mbox{\hyperlink{classrt_1_1IObject_ac2efb29634d6dd58f5fb4cf47a30e189}{draw}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window) const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{classrt_1_1APersonnage}{rt\+::\+APersonnage}}}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classrt_1_1APersonnage_a7f6edabc61526fbdc58997d264a5103d}{\+\_\+life}}
+\item 
+float \mbox{\hyperlink{classrt_1_1APersonnage_a379d2c61aa9f46f439c51605db3e1a7c}{\+\_\+degat}}
+\item 
+\mbox{\hyperlink{classrt_1_1Text}{Text}} \mbox{\hyperlink{classrt_1_1APersonnage_a723626b44d7481f5f8f89a60a9d61b2e}{\+\_\+life\+Text}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{classrt_1_1AnimatedRectangle}{rt\+::\+Animated\+Rectangle}}}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Clock \mbox{\hyperlink{classrt_1_1AnimatedRectangle_a8751616354a7ca26284108557fc48263}{\+\_\+clock}}
+\item 
+sf\+::\+Int\+Rect \mbox{\hyperlink{classrt_1_1AnimatedRectangle_a461c1996f30ae5739e8e571ade106499}{\+\_\+int\+Rect}}
+\item 
+sf\+::\+Int\+Rect \mbox{\hyperlink{classrt_1_1AnimatedRectangle_ab18d99cea17a4220e0ec9f4993056acd}{\+\_\+image\+Limit}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classrt_1_1AnimatedRectangle_a7e2592461dc59338ae7601c2f9afd117}{\+\_\+animation\+Sequence}}
+\item 
+float \mbox{\hyperlink{classrt_1_1AnimatedRectangle_ace6e26f3af86bdd55fb6375901966e82}{\+\_\+mili\+Delay}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{classrt_1_1Rectangle}{rt\+::\+Rectangle}}}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Rectangle\+Shape \mbox{\hyperlink{classrt_1_1Rectangle_ae1bfd0960100ea8c91012beb3b18ea66}{\+\_\+rect}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classrt_1_1Rectangle_a0dc69baa1c0dfaec4a69f9eefa6a0747}{\+\_\+position}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classrt_1_1Rectangle_a8cd19b08de5c56a2973b7446cf5651ef}{\+\_\+size}}
+\item 
+sf\+::\+Texture \mbox{\hyperlink{classrt_1_1Rectangle_a6709c49d1c553d29c10c15cc0b25eec8}{\+\_\+texture}}
+\item 
+sf\+::\+Color \mbox{\hyperlink{classrt_1_1Rectangle_afe3223b465fd87a9f6c16d8e3ed5e99a}{\+\_\+backgroud\+Color}} = sf\+::\+Color\+::\+Transparent
+\item 
+\mbox{\hyperlink{namespacert_a08f089eb1262b0c30a2825e3d07b4e49}{Key\+Event}} \mbox{\hyperlink{classrt_1_1Rectangle_a5af04fe37e47c6d6687a2b23f8e59324}{\+\_\+current\+Event}}
+\item 
+bool \mbox{\hyperlink{classrt_1_1Rectangle_a6d0780a906a4185899bae4fef75174d6}{\+\_\+last\+Click}} = false
+\item 
+sf\+::\+Music \mbox{\hyperlink{classrt_1_1Rectangle_a7431b0d8b56772e7ce72bb55adc6b32c}{\+\_\+song}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{classrt_1_1IObject}{rt\+::\+IObject}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classrt_1_1IObject_adf9d37fb92ac94395ecac48ae1e5d7ce}{\+\_\+id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+enemy class 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrt_1_1EnemyBomb_a3feab90af72de598b7a5363fb1b29c99}\label{classrt_1_1EnemyBomb_a3feab90af72de598b7a5363fb1b29c99}} 
+\index{rt::EnemyBomb@{rt::EnemyBomb}!EnemyBomb@{EnemyBomb}}
+\index{EnemyBomb@{EnemyBomb}!rt::EnemyBomb@{rt::EnemyBomb}}
+\doxysubsubsection{\texorpdfstring{EnemyBomb()}{EnemyBomb()}}
+{\footnotesize\ttfamily rt\+::\+Enemy\+Bomb\+::\+Enemy\+Bomb (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new Enemy Person\+:\+: Enemy Person object class Enemy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em move\+Sequence} & \\
+\hline
+{\em mili\+Delay} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrt_1_1EnemyBomb_a9409d0fed3e6b21b66801fb65159803c}\label{classrt_1_1EnemyBomb_a9409d0fed3e6b21b66801fb65159803c}} 
+\index{rt::EnemyBomb@{rt::EnemyBomb}!````~EnemyBomb@{$\sim$EnemyBomb}}
+\index{````~EnemyBomb@{$\sim$EnemyBomb}!rt::EnemyBomb@{rt::EnemyBomb}}
+\doxysubsubsection{\texorpdfstring{$\sim$EnemyBomb()}{~EnemyBomb()}}
+{\footnotesize\ttfamily rt\+::\+Enemy\+Bomb\+::$\sim$\+Enemy\+Bomb (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+client/\+Graphic/include/\mbox{\hyperlink{EnemyBomb_8hpp}{Enemy\+Bomb.\+hpp}}\item 
+client/\+Graphic/source/\+Games/\+Enemies/\mbox{\hyperlink{EnemyBomb_8cpp}{Enemy\+Bomb.\+cpp}}\end{DoxyCompactItemize}

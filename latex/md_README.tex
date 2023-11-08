@@ -1,0 +1,64 @@
+\hypertarget{md_README_autotoc_md14}{}\doxysection{R-\/\+TYPE Project -\/$>$ A game engine that roars!}\label{md_README_autotoc_md14}
+\hypertarget{md_README_autotoc_md15}{}\doxysubsection{What is R-\/\+TYPE ?}\label{md_README_autotoc_md15}
+\char`\"{}\+R-\/\+Type\char`\"{} is an iconic side-\/scrolling shoot them up video game series. This game is mainly about defeating enemies, surviving difficult levels, collecting power-\/ups to improve your ship, and progressing through the different levels of this adventure. You can find more details regarding this game through the following resource \href{http://www.hardcoregaming101.net/r-type/}{\texttt{ click on me !}}\hypertarget{md_README_autotoc_md16}{}\doxysubsection{Project description}\label{md_README_autotoc_md16}
+This project aims to implement a multithreaded server and a graphics client for an existing video game well known to everyone, the \char`\"{}\+R-\/\+TYPE\char`\"{}. In other themes, it is about setting up in C++ our own r-\/type game but with additional requirements not present in the original version of the game. It is indeed about being able to achieve\+:
+\begin{DoxyItemize}
+\item \mbox{[}\mbox{]} A network game in which one to four players can fight the evil Bydos together and
+\item \mbox{[}\mbox{]} Architectural models of a real game engine.
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md17}{}\doxysubsection{Installation Instructions}\label{md_README_autotoc_md17}
+\hypertarget{md_README_autotoc_md18}{}\doxysubsubsection{Prerequisites Installed}\label{md_README_autotoc_md18}
+\hypertarget{md_README_autotoc_md19}{}\doxyparagraph{On Linux\+:}\label{md_README_autotoc_md19}
+
+\begin{DoxyItemize}
+\item Python
+\item Conan
+\item cmake
+\item Some Packages\+: pkg-\/config libudev-\/dev libgl-\/dev libx11-\/xcb-\/dev libfontenc-\/dev libice-\/dev libsm-\/dev libxau-\/dev libxaw7-\/dev libxcomposite-\/dev libxcursor-\/dev libxdamage-\/dev libxext-\/dev libxfixes-\/dev libxi-\/dev libxinerama-\/dev libxkbfile-\/dev libxmu-\/dev libxmuu-\/dev libxpm-\/dev libxrandr-\/dev libxrender-\/dev libxres-\/dev libxss-\/dev libxt-\/dev libxtst-\/dev libxv-\/dev libxvmc-\/dev libxxf86vm-\/dev libxcb-\/render0-\/dev libxcb-\/render-\/util0-\/dev libxcb-\/xkb-\/dev libxcb-\/icccm4-\/dev libxcb-\/image0-\/dev libxcb-\/keysyms1-\/dev libxcb-\/randr0-\/dev libxcb-\/shape0-\/dev libxcb-\/sync-\/dev libxcb-\/xfixes0-\/dev libxcb-\/xinerama0-\/dev libxcb-\/dri3-\/dev uuid-\/dev libxcb-\/cursor-\/dev libxcb-\/util-\/dev libboost-\/dev
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md20}{}\doxyparagraph{On windows\+:}\label{md_README_autotoc_md20}
+
+\begin{DoxyItemize}
+\item Visual studio
+\item Visual studio\textquotesingle{}s Buildtools
+\item C++ dependencies in visual studio
+\item Chocolatey
+\item Python
+\item Conan
+\item Cmake
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md21}{}\doxysubsubsection{Build Project}\label{md_README_autotoc_md21}
+Run in terminal with all privilegies\textquotesingle{}s administrator in R-\/\+Type\textquotesingle{}s repository\+:\hypertarget{md_README_autotoc_md22}{}\doxyparagraph{On Linux\+:}\label{md_README_autotoc_md22}
+
+\begin{DoxyItemize}
+\item conan profile detect --force
+\item conan install . --output-\/folder=build --build=missing
+\item cd build
+\item cmake .. -\/DCMAKE\+\_\+\+TOOLCHAIN\+\_\+\+FILE=conan\+\_\+toolchain.\+cmake -\/DCMAKE\+\_\+\+BUILD\+\_\+\+TYPE=Release
+\item make
+\item mv r-\/type\+\_\+client r-\/type\+\_\+server ..
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md23}{}\doxyparagraph{On Windows\+: (\+You must have a R-\/\+Type folder in \+: \char`\"{}\+C\+:\textbackslash{}\+Program Files (x86)\textbackslash{}\+Microsoft Visual Studio\textbackslash{}2022\textbackslash{}\+Build\+Tools\char`\"{})}\label{md_README_autotoc_md23}
+
+\begin{DoxyItemize}
+\item conan profile detect --force
+\item conan install . --output-\/folder=build --build=missing
+\item cd build
+\item cmake .. -\/DCMAKE\+\_\+\+TOOLCHAIN\+\_\+\+FILE=conan\+\_\+toolchain.\+cmake -\/DCMAKE\+\_\+\+BUILD\+\_\+\+TYPE=Release
+\item cmake --build . --config Release
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md24}{}\doxysubsection{End-\/\+Users\+:}\label{md_README_autotoc_md24}
+Find a .zip file corresponding for your OS and unzip it\hypertarget{md_README_autotoc_md25}{}\doxysubsection{Documentation}\label{md_README_autotoc_md25}
+Link\+: \mbox{[}developper\+\_\+documentation\mbox{]} (\href{https://fardiath.github.io/dev/html/}{\texttt{ https\+://fardiath.\+github.\+io/dev/html/}})\hypertarget{md_README_autotoc_md26}{}\doxysubsection{License}\label{md_README_autotoc_md26}
+Apache License, Version 2.\+0\hypertarget{md_README_autotoc_md27}{}\doxysubsection{Track 2}\label{md_README_autotoc_md27}
+The track we are choosen is the the second track\+: Advanced \mbox{\hyperlink{classNetwork}{Network}} The goal of this track is to enhance the server and networking subsystems of your game engine, matching with functionalities actually implemented in your favorites games. This track offers 3 topics you might want to work on\+: Multi-\/instance Server, Data Transmission Efficiency and Reliability, and High-\/level Networking Engine Architecture.
+\begin{DoxyItemize}
+\item MULTI-\/\+INSTANCE SERVER Most dedicated game servers are able to handle several game instances in parallel, and not only one as you have already developed up to this point. With the possibility to have several game instances running, there is the need to bring various functionali-\/ ties to manage them, handle the concurrency, provide methods to let users connect to the server, see the instances, join the games, discuss, etc.
+\item DATA TRANSMISSION EFFICIENCY AND RELIABILITY In your current prototype the Server is probably sending updates to each client 60x/seconds for all entities in the world, without deeper technical consideration. While on a local network it should offer a reasonable experience, over the Internet this might be a quite different story. Due to inevitable network issues such as low bandwidth, network latency, congestion, or unreliability (packet losses, out of order packets, duplication), the game might face some serious synchronization problems lead-\/ ing to suboptimal gameplay experience, or worst, full disconnections.
+\item HIGH-\/\+LEVEL NETWORKING ENGINE ARCHITECTURE Fast-\/paced networked video games such as R-\/\+Type or any FPS are fundamentally real-\/time distributed simulations over a network. The central design issue of such programs is that their state (i.\+e. the “game world” in our case) needs to be consistent across each individual participant of the simulation (i.\+e. Clients and the Server), in real-\/time, BUT there is an incompressible communication latency between them, familiarly called “lag”.
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md28}{}\doxysubsection{Project managers}\label{md_README_autotoc_md28}
+As part of the relaunch of this project, the \char`\"{}\+Krrr\char`\"{} group working on the implementation of this video game is made up of the following members\+:
+
+
+\begin{DoxyItemize}
+\item Omer Adjallala, E-\/mail\+: \href{mailto:omer.adjallala@epitech.eu}{\texttt{ omer.\+adjallala@epitech.\+eu}} (\char`\"{}\+Krrr\char`\"{}\textquotesingle{}s Leader)
+\item Cirine FELIHO, E-\/mail\+: \href{mailto:cirine.feliho@epitech.eu}{\texttt{ cirine.\+feliho@epitech.\+eu}}
+\item Fardiath ABIBOU, E-\/mail\+: \href{mailto:fardiath.abibou@epitech.eu}{\texttt{ fardiath.\+abibou@epitech.\+eu}}
+\item Hansly AGBAMATE, E-\/mail\+: \href{mailto:hansly.agbamate@epitech.eu}{\texttt{ hansly.\+agbamate@epitech.\+eu}}
+\item Olouwachegoun BADOU E-\/mail\+: \href{mailto:olouwachegoun.badou@epitech.eu}{\texttt{ olouwachegoun.\+badou@epitech.\+eu}} 
+\end{DoxyItemize}

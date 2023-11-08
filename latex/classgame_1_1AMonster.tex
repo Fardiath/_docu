@@ -1,0 +1,281 @@
+\hypertarget{classgame_1_1AMonster}{}\doxysection{game\+::AMonster Class Reference}
+\label{classgame_1_1AMonster}\index{game::AMonster@{game::AMonster}}
+
+
+{\ttfamily \#include $<$game.\+hpp$>$}
+
+Inheritance diagram for game\+::AMonster\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classgame_1_1AMonster}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classgame_1_1AMonster_ab0887e61589846c32a683f75f50827e8}{$\sim$\+AMonster}} ()
+\item 
+virtual void \mbox{\hyperlink{classgame_1_1AMonster_ae9f21d6636a160362d5be2afca3e4f2b}{set\+Position}} (double x, double y)
+\item 
+virtual void \mbox{\hyperlink{classgame_1_1AMonster_a75bf1ad43c4a75094a7f9919f55f1290}{move\+Ennemy}} (double x)
+\item 
+virtual void \mbox{\hyperlink{classgame_1_1AMonster_a5200bca0c81641bc960020460b5f3f6a}{set\+Monster\+Life}} (int life)
+\item 
+virtual bool \mbox{\hyperlink{classgame_1_1AMonster_a2c8e756cf639d7dfb5bd1dc7cba7861f}{is\+Dead}} (void)
+\item 
+virtual int \mbox{\hyperlink{classgame_1_1AMonster_a3501010c1db2e700405bef43ea6f782e}{get\+Monster\+Life}} () const
+\item 
+virtual void \mbox{\hyperlink{classgame_1_1AMonster_a9b3886b15437f8c7e018ddc99d7b2615}{check\+Collision}} (double x, double y)
+\item 
+virtual std\+::string \mbox{\hyperlink{classgame_1_1AMonster_a99f070d6c76a3199cc50ffe6f79b4f04}{get\+Monster\+Type}} () const
+\item 
+virtual bool \mbox{\hyperlink{classgame_1_1AMonster_a6ff8ea7a2a1efa6f3d107443a57222e0}{is\+Touched}} () const
+\item 
+virtual double \mbox{\hyperlink{classgame_1_1AMonster_a0fb19d5e8dbcef271099f8aa734fade4}{get\+Frequency}} () const
+\item 
+virtual int \mbox{\hyperlink{classgame_1_1AMonster_a82d372bbe36fd4c0c606abb4db817f29}{get\+ID}} () const
+\item 
+virtual std\+::tuple$<$ double, double $>$ \mbox{\hyperlink{classgame_1_1AMonster_a283f192982cfbf81a28570c479052495}{get\+Monster\+Position}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgame_1_1IMonster}{game\+::\+IMonster}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classgame_1_1IMonster_a9f62b43473c0dd2669ec888396f1d065}{$\sim$\+IMonster}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classgame_1_1IMonster_ae0784d8c8bae81ade627a812a4bf9406}{set\+Position}} (double x, double y)=0
+\item 
+virtual void \mbox{\hyperlink{classgame_1_1IMonster_a67b3894c822bca9e35d5cde65d8a7114}{move\+Ennemy}} (double x)=0
+\item 
+virtual void \mbox{\hyperlink{classgame_1_1IMonster_a3e0c9a947352302aaf2af32f83869453}{set\+Monster\+Life}} (int life)=0
+\item 
+virtual int \mbox{\hyperlink{classgame_1_1IMonster_a07310615585c13fc9fe526201bf10421}{get\+Monster\+Life}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classgame_1_1IMonster_a7ebd16fb11cb05a33d8822d19050ce65}{check\+Collision}} (double x, double y)=0
+\item 
+virtual std\+::string \mbox{\hyperlink{classgame_1_1IMonster_a6f0536e6f11eb0c854d793dcf2c0be40}{get\+Monster\+Type}} () const =0
+\item 
+virtual int \mbox{\hyperlink{classgame_1_1IMonster_afdf821842e757432ab3434bc5982c52f}{get\+ID}} () const =0
+\item 
+virtual bool \mbox{\hyperlink{classgame_1_1IMonster_a14f5549baaf7a9948ecfe0ebb14da03e}{is\+Touched}} () const =0
+\item 
+virtual bool \mbox{\hyperlink{classgame_1_1IMonster_a4948266b9e0d7e5087c6085d11873d14}{is\+Dead}} (void)=0
+\item 
+virtual double \mbox{\hyperlink{classgame_1_1IMonster_afa5d716661ad5f8157158efdcc4abe81}{get\+Frequency}} () const =0
+\item 
+virtual std\+::tuple$<$ double, double $>$ \mbox{\hyperlink{classgame_1_1IMonster_a72da44dd0cdac1f4cab43beb9983aa75}{get\+Monster\+Position}} () const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classgame_1_1AMonster_afc00bf0fe8cb3d001c1bf85760d991f7}{\+\_\+\+Monster\+Type}}
+\item 
+double \mbox{\hyperlink{classgame_1_1AMonster_a4cd7899345ce6fb9d88b3f90a765532a}{frequency}}
+\item 
+double \mbox{\hyperlink{classgame_1_1AMonster_adc99f112e8cdcf7e2c72dc23e760e2ef}{\+\_\+x}}
+\item 
+double \mbox{\hyperlink{classgame_1_1AMonster_a698718f21b4aeb4fa70a4824c2737dcf}{\+\_\+y}}
+\item 
+bool \mbox{\hyperlink{classgame_1_1AMonster_ae1c49993e7c8a38a96b56e4fe98adbb8}{is\+\_\+touched}}
+\item 
+bool \mbox{\hyperlink{classgame_1_1AMonster_af38461334abe2db2ed0b3a122228e1db}{is\+\_\+dead}}
+\item 
+int \mbox{\hyperlink{classgame_1_1AMonster_aa7fa03a000b4036ddee00b73e44b8b40}{\+\_\+id}}
+\item 
+int \mbox{\hyperlink{classgame_1_1AMonster_a77d7e6ab34061d83463d79efdf34328b}{\+\_\+life}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgame_1_1IMonster}{game\+::\+IMonster}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classgame_1_1IMonster_ad5f1804a4782c71d9fe9f61427e3a16a}{\+\_\+\+Monster\+Type}}
+\item 
+double \mbox{\hyperlink{classgame_1_1IMonster_a67fc31ab5857aea6537d72b6a679e639}{frequency}}
+\item 
+double \mbox{\hyperlink{classgame_1_1IMonster_ae817dbfddc6f30e712a4207f966095f7}{\+\_\+x}}
+\item 
+double \mbox{\hyperlink{classgame_1_1IMonster_a3e4fb4b794d4bf50a39cac9f289d84d2}{\+\_\+y}}
+\item 
+bool \mbox{\hyperlink{classgame_1_1IMonster_aa1f754b847fde41bedf800fed68e935c}{is\+\_\+touched}}
+\item 
+int \mbox{\hyperlink{classgame_1_1IMonster_a02d34153ebf4c629f123ad28c42e9603}{\+\_\+id}}
+\item 
+int \mbox{\hyperlink{classgame_1_1IMonster_aced81902a3ac4b1c984647ec1421644c}{\+\_\+life}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgame_1_1AMonster_ab0887e61589846c32a683f75f50827e8}\label{classgame_1_1AMonster_ab0887e61589846c32a683f75f50827e8}} 
+\index{game::AMonster@{game::AMonster}!````~AMonster@{$\sim$AMonster}}
+\index{````~AMonster@{$\sim$AMonster}!game::AMonster@{game::AMonster}}
+\doxysubsubsection{\texorpdfstring{$\sim$AMonster()}{~AMonster()}}
+{\footnotesize\ttfamily virtual game\+::\+AMonster\+::$\sim$\+AMonster (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgame_1_1AMonster_a9b3886b15437f8c7e018ddc99d7b2615}\label{classgame_1_1AMonster_a9b3886b15437f8c7e018ddc99d7b2615}} 
+\index{game::AMonster@{game::AMonster}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!game::AMonster@{game::AMonster}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}}
+{\footnotesize\ttfamily void AMonster\+::check\+Collision (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classgame_1_1IMonster_a7ebd16fb11cb05a33d8822d19050ce65}{game\+::\+IMonster}}.
+
+\mbox{\Hypertarget{classgame_1_1AMonster_a0fb19d5e8dbcef271099f8aa734fade4}\label{classgame_1_1AMonster_a0fb19d5e8dbcef271099f8aa734fade4}} 
+\index{game::AMonster@{game::AMonster}!getFrequency@{getFrequency}}
+\index{getFrequency@{getFrequency}!game::AMonster@{game::AMonster}}
+\doxysubsubsection{\texorpdfstring{getFrequency()}{getFrequency()}}
+{\footnotesize\ttfamily double AMonster\+::get\+Frequency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classgame_1_1IMonster_afa5d716661ad5f8157158efdcc4abe81}{game\+::\+IMonster}}.
+
+\mbox{\Hypertarget{classgame_1_1AMonster_a82d372bbe36fd4c0c606abb4db817f29}\label{classgame_1_1AMonster_a82d372bbe36fd4c0c606abb4db817f29}} 
+\index{game::AMonster@{game::AMonster}!getID@{getID}}
+\index{getID@{getID}!game::AMonster@{game::AMonster}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily int AMonster\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classgame_1_1IMonster_afdf821842e757432ab3434bc5982c52f}{game\+::\+IMonster}}.
+
+\mbox{\Hypertarget{classgame_1_1AMonster_a3501010c1db2e700405bef43ea6f782e}\label{classgame_1_1AMonster_a3501010c1db2e700405bef43ea6f782e}} 
+\index{game::AMonster@{game::AMonster}!getMonsterLife@{getMonsterLife}}
+\index{getMonsterLife@{getMonsterLife}!game::AMonster@{game::AMonster}}
+\doxysubsubsection{\texorpdfstring{getMonsterLife()}{getMonsterLife()}}
+{\footnotesize\ttfamily int AMonster\+::get\+Monster\+Life (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classgame_1_1IMonster_a07310615585c13fc9fe526201bf10421}{game\+::\+IMonster}}.
+
+\mbox{\Hypertarget{classgame_1_1AMonster_a283f192982cfbf81a28570c479052495}\label{classgame_1_1AMonster_a283f192982cfbf81a28570c479052495}} 
+\index{game::AMonster@{game::AMonster}!getMonsterPosition@{getMonsterPosition}}
+\index{getMonsterPosition@{getMonsterPosition}!game::AMonster@{game::AMonster}}
+\doxysubsubsection{\texorpdfstring{getMonsterPosition()}{getMonsterPosition()}}
+{\footnotesize\ttfamily std\+::tuple$<$ double, double $>$ AMonster\+::get\+Monster\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classgame_1_1IMonster_a72da44dd0cdac1f4cab43beb9983aa75}{game\+::\+IMonster}}.
+
+\mbox{\Hypertarget{classgame_1_1AMonster_a99f070d6c76a3199cc50ffe6f79b4f04}\label{classgame_1_1AMonster_a99f070d6c76a3199cc50ffe6f79b4f04}} 
+\index{game::AMonster@{game::AMonster}!getMonsterType@{getMonsterType}}
+\index{getMonsterType@{getMonsterType}!game::AMonster@{game::AMonster}}
+\doxysubsubsection{\texorpdfstring{getMonsterType()}{getMonsterType()}}
+{\footnotesize\ttfamily std\+::string AMonster\+::get\+Monster\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classgame_1_1IMonster_a6f0536e6f11eb0c854d793dcf2c0be40}{game\+::\+IMonster}}.
+
+\mbox{\Hypertarget{classgame_1_1AMonster_a2c8e756cf639d7dfb5bd1dc7cba7861f}\label{classgame_1_1AMonster_a2c8e756cf639d7dfb5bd1dc7cba7861f}} 
+\index{game::AMonster@{game::AMonster}!isDead@{isDead}}
+\index{isDead@{isDead}!game::AMonster@{game::AMonster}}
+\doxysubsubsection{\texorpdfstring{isDead()}{isDead()}}
+{\footnotesize\ttfamily bool AMonster\+::is\+Dead (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classgame_1_1IMonster_a4948266b9e0d7e5087c6085d11873d14}{game\+::\+IMonster}}.
+
+\mbox{\Hypertarget{classgame_1_1AMonster_a6ff8ea7a2a1efa6f3d107443a57222e0}\label{classgame_1_1AMonster_a6ff8ea7a2a1efa6f3d107443a57222e0}} 
+\index{game::AMonster@{game::AMonster}!isTouched@{isTouched}}
+\index{isTouched@{isTouched}!game::AMonster@{game::AMonster}}
+\doxysubsubsection{\texorpdfstring{isTouched()}{isTouched()}}
+{\footnotesize\ttfamily bool AMonster\+::is\+Touched (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classgame_1_1IMonster_a14f5549baaf7a9948ecfe0ebb14da03e}{game\+::\+IMonster}}.
+
+\mbox{\Hypertarget{classgame_1_1AMonster_a75bf1ad43c4a75094a7f9919f55f1290}\label{classgame_1_1AMonster_a75bf1ad43c4a75094a7f9919f55f1290}} 
+\index{game::AMonster@{game::AMonster}!moveEnnemy@{moveEnnemy}}
+\index{moveEnnemy@{moveEnnemy}!game::AMonster@{game::AMonster}}
+\doxysubsubsection{\texorpdfstring{moveEnnemy()}{moveEnnemy()}}
+{\footnotesize\ttfamily void AMonster\+::move\+Ennemy (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classgame_1_1IMonster_a67b3894c822bca9e35d5cde65d8a7114}{game\+::\+IMonster}}.
+
+\mbox{\Hypertarget{classgame_1_1AMonster_a5200bca0c81641bc960020460b5f3f6a}\label{classgame_1_1AMonster_a5200bca0c81641bc960020460b5f3f6a}} 
+\index{game::AMonster@{game::AMonster}!setMonsterLife@{setMonsterLife}}
+\index{setMonsterLife@{setMonsterLife}!game::AMonster@{game::AMonster}}
+\doxysubsubsection{\texorpdfstring{setMonsterLife()}{setMonsterLife()}}
+{\footnotesize\ttfamily void AMonster\+::set\+Monster\+Life (\begin{DoxyParamCaption}\item[{int}]{life }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classgame_1_1IMonster_a3e0c9a947352302aaf2af32f83869453}{game\+::\+IMonster}}.
+
+\mbox{\Hypertarget{classgame_1_1AMonster_ae9f21d6636a160362d5be2afca3e4f2b}\label{classgame_1_1AMonster_ae9f21d6636a160362d5be2afca3e4f2b}} 
+\index{game::AMonster@{game::AMonster}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!game::AMonster@{game::AMonster}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void AMonster\+::set\+Position (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classgame_1_1IMonster_ae0784d8c8bae81ade627a812a4bf9406}{game\+::\+IMonster}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classgame_1_1AMonster_aa7fa03a000b4036ddee00b73e44b8b40}\label{classgame_1_1AMonster_aa7fa03a000b4036ddee00b73e44b8b40}} 
+\index{game::AMonster@{game::AMonster}!\_id@{\_id}}
+\index{\_id@{\_id}!game::AMonster@{game::AMonster}}
+\doxysubsubsection{\texorpdfstring{\_id}{\_id}}
+{\footnotesize\ttfamily int game\+::\+AMonster\+::\+\_\+id\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classgame_1_1AMonster_a77d7e6ab34061d83463d79efdf34328b}\label{classgame_1_1AMonster_a77d7e6ab34061d83463d79efdf34328b}} 
+\index{game::AMonster@{game::AMonster}!\_life@{\_life}}
+\index{\_life@{\_life}!game::AMonster@{game::AMonster}}
+\doxysubsubsection{\texorpdfstring{\_life}{\_life}}
+{\footnotesize\ttfamily int game\+::\+AMonster\+::\+\_\+life\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classgame_1_1AMonster_afc00bf0fe8cb3d001c1bf85760d991f7}\label{classgame_1_1AMonster_afc00bf0fe8cb3d001c1bf85760d991f7}} 
+\index{game::AMonster@{game::AMonster}!\_MonsterType@{\_MonsterType}}
+\index{\_MonsterType@{\_MonsterType}!game::AMonster@{game::AMonster}}
+\doxysubsubsection{\texorpdfstring{\_MonsterType}{\_MonsterType}}
+{\footnotesize\ttfamily std\+::string game\+::\+AMonster\+::\+\_\+\+Monster\+Type\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classgame_1_1AMonster_adc99f112e8cdcf7e2c72dc23e760e2ef}\label{classgame_1_1AMonster_adc99f112e8cdcf7e2c72dc23e760e2ef}} 
+\index{game::AMonster@{game::AMonster}!\_x@{\_x}}
+\index{\_x@{\_x}!game::AMonster@{game::AMonster}}
+\doxysubsubsection{\texorpdfstring{\_x}{\_x}}
+{\footnotesize\ttfamily double game\+::\+AMonster\+::\+\_\+x\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classgame_1_1AMonster_a698718f21b4aeb4fa70a4824c2737dcf}\label{classgame_1_1AMonster_a698718f21b4aeb4fa70a4824c2737dcf}} 
+\index{game::AMonster@{game::AMonster}!\_y@{\_y}}
+\index{\_y@{\_y}!game::AMonster@{game::AMonster}}
+\doxysubsubsection{\texorpdfstring{\_y}{\_y}}
+{\footnotesize\ttfamily double game\+::\+AMonster\+::\+\_\+y\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classgame_1_1AMonster_a4cd7899345ce6fb9d88b3f90a765532a}\label{classgame_1_1AMonster_a4cd7899345ce6fb9d88b3f90a765532a}} 
+\index{game::AMonster@{game::AMonster}!frequency@{frequency}}
+\index{frequency@{frequency}!game::AMonster@{game::AMonster}}
+\doxysubsubsection{\texorpdfstring{frequency}{frequency}}
+{\footnotesize\ttfamily double game\+::\+AMonster\+::frequency\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classgame_1_1AMonster_af38461334abe2db2ed0b3a122228e1db}\label{classgame_1_1AMonster_af38461334abe2db2ed0b3a122228e1db}} 
+\index{game::AMonster@{game::AMonster}!is\_dead@{is\_dead}}
+\index{is\_dead@{is\_dead}!game::AMonster@{game::AMonster}}
+\doxysubsubsection{\texorpdfstring{is\_dead}{is\_dead}}
+{\footnotesize\ttfamily bool game\+::\+AMonster\+::is\+\_\+dead\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classgame_1_1AMonster_ae1c49993e7c8a38a96b56e4fe98adbb8}\label{classgame_1_1AMonster_ae1c49993e7c8a38a96b56e4fe98adbb8}} 
+\index{game::AMonster@{game::AMonster}!is\_touched@{is\_touched}}
+\index{is\_touched@{is\_touched}!game::AMonster@{game::AMonster}}
+\doxysubsubsection{\texorpdfstring{is\_touched}{is\_touched}}
+{\footnotesize\ttfamily bool game\+::\+AMonster\+::is\+\_\+touched\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+server/include/\mbox{\hyperlink{game_8hpp}{game.\+hpp}}\item 
+server/source/\mbox{\hyperlink{AMonster_8cpp}{AMonster.\+cpp}}\end{DoxyCompactItemize}

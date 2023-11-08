@@ -1,0 +1,104 @@
+\hypertarget{classrt_1_1AObject}{}\doxysection{rt\+::AObject Class Reference}
+\label{classrt_1_1AObject}\index{rt::AObject@{rt::AObject}}
+
+
+create \mbox{\hyperlink{classrt_1_1IObject}{IObject}} class  
+
+
+
+
+{\ttfamily \#include $<$AObject.\+hpp$>$}
+
+Inheritance diagram for rt\+::AObject\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.067292cm]{classrt_1_1AObject}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrt_1_1AObject_ae9be2b861738e9b43f6ccf8bdb1ab0e0}{AObject}} (void)
+\item 
+\mbox{\hyperlink{classrt_1_1AObject_a89d0cfe6bb89b27e874d0ab695b4a6a1}{AObject}} (int const id)
+\item 
+\mbox{\hyperlink{classrt_1_1AObject_aa0a5a0db9cc6c0ffbf10006110ea4494}{$\sim$\+AObject}} (void)=default
+\item 
+std\+::string \mbox{\hyperlink{classrt_1_1AObject_a70bd424f0cdf999ac212569d1791ea3d}{get\+Id}} (void)
+\item 
+virtual void \mbox{\hyperlink{classrt_1_1AObject_a230e38d7506e5317dba522a481da5c9c}{draw}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window) const =0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classrt_1_1IObject}{rt\+::\+IObject}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classrt_1_1IObject_a1896cae189c15394cd5b563119b521cc}{$\sim$\+IObject}} (void)=default
+\item 
+virtual std\+::string \mbox{\hyperlink{classrt_1_1IObject_afad8311268e4475799b3b89188366fce}{get\+Id}} (void)=0
+\item 
+virtual void \mbox{\hyperlink{classrt_1_1IObject_ac2efb29634d6dd58f5fb4cf47a30e189}{draw}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window) const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{classrt_1_1IObject}{rt\+::\+IObject}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classrt_1_1IObject_adf9d37fb92ac94395ecac48ae1e5d7ce}{\+\_\+id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+create \mbox{\hyperlink{classrt_1_1IObject}{IObject}} class 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrt_1_1AObject_ae9be2b861738e9b43f6ccf8bdb1ab0e0}\label{classrt_1_1AObject_ae9be2b861738e9b43f6ccf8bdb1ab0e0}} 
+\index{rt::AObject@{rt::AObject}!AObject@{AObject}}
+\index{AObject@{AObject}!rt::AObject@{rt::AObject}}
+\doxysubsubsection{\texorpdfstring{AObject()}{AObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily rt\+::\+AObject\+::\+AObject (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrt_1_1AObject_a89d0cfe6bb89b27e874d0ab695b4a6a1}\label{classrt_1_1AObject_a89d0cfe6bb89b27e874d0ab695b4a6a1}} 
+\index{rt::AObject@{rt::AObject}!AObject@{AObject}}
+\index{AObject@{AObject}!rt::AObject@{rt::AObject}}
+\doxysubsubsection{\texorpdfstring{AObject()}{AObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily rt\+::\+AObject\+::\+AObject (\begin{DoxyParamCaption}\item[{int const}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrt_1_1AObject_aa0a5a0db9cc6c0ffbf10006110ea4494}\label{classrt_1_1AObject_aa0a5a0db9cc6c0ffbf10006110ea4494}} 
+\index{rt::AObject@{rt::AObject}!````~AObject@{$\sim$AObject}}
+\index{````~AObject@{$\sim$AObject}!rt::AObject@{rt::AObject}}
+\doxysubsubsection{\texorpdfstring{$\sim$AObject()}{~AObject()}}
+{\footnotesize\ttfamily rt\+::\+AObject\+::$\sim$\+AObject (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrt_1_1AObject_a230e38d7506e5317dba522a481da5c9c}\label{classrt_1_1AObject_a230e38d7506e5317dba522a481da5c9c}} 
+\index{rt::AObject@{rt::AObject}!draw@{draw}}
+\index{draw@{draw}!rt::AObject@{rt::AObject}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void rt\+::\+AObject\+::draw (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$}]{window }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classrt_1_1IObject_ac2efb29634d6dd58f5fb4cf47a30e189}{rt\+::\+IObject}}.
+
+
+
+Implemented in \mbox{\hyperlink{classrt_1_1AEnemy_a4e9ff513ad68d653422ae03cbf4d558e}{rt\+::\+AEnemy}}, \mbox{\hyperlink{classrt_1_1Button_accd93cde90db815dcb41caffe754cfb4}{rt\+::\+Button}}, \mbox{\hyperlink{classrt_1_1Input_a4c13cc75c31fb9ca306672e313b265f2}{rt\+::\+Input}}, \mbox{\hyperlink{classrt_1_1Player_a7631efbc22d36cf303a4e7245c83f64d}{rt\+::\+Player}}, \mbox{\hyperlink{classrt_1_1Rectangle_ab12a29fa2412155201aceca3e4a80c1d}{rt\+::\+Rectangle}}, \mbox{\hyperlink{classrt_1_1Room_ae66432e6f99016ebb158be0211a53874}{rt\+::\+Room}}, and \mbox{\hyperlink{classrt_1_1Text_a344e09d8f4e047da4c863b1224dfc8e6}{rt\+::\+Text}}.
+
+\mbox{\Hypertarget{classrt_1_1AObject_a70bd424f0cdf999ac212569d1791ea3d}\label{classrt_1_1AObject_a70bd424f0cdf999ac212569d1791ea3d}} 
+\index{rt::AObject@{rt::AObject}!getId@{getId}}
+\index{getId@{getId}!rt::AObject@{rt::AObject}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily string rt\+::\+AObject\+::get\+Id (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classrt_1_1IObject_afad8311268e4475799b3b89188366fce}{rt\+::\+IObject}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+client/\+Graphic/include/\mbox{\hyperlink{AObject_8hpp}{AObject.\+hpp}}\item 
+client/\+Graphic/source/\+Objects/\mbox{\hyperlink{AObject_8cpp}{AObject.\+cpp}}\end{DoxyCompactItemize}

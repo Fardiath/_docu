@@ -1,0 +1,156 @@
+\hypertarget{classgame_1_1player}{}\doxysection{game\+::player Class Reference}
+\label{classgame_1_1player}\index{game::player@{game::player}}
+
+
+create player class  
+
+
+
+
+{\ttfamily \#include $<$game.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1player_aadb08ab2c404c0f629f6113c5c1a43ca}{player}} (std\+::string name, int player\+Number, boost\+::asio\+::ip\+::udp\+::endpoint endpoint, int id)
+\item 
+\mbox{\hyperlink{classgame_1_1player_aab5d2e47b80e0481f09ca0df8b823057}{$\sim$player}} ()
+\item 
+\mbox{\hyperlink{classgame_1_1player_a87102b947349d5a8fe0fd2fb7a015ace}{player}} (const \mbox{\hyperlink{classgame_1_1player}{player}} \&other)
+\item 
+int \mbox{\hyperlink{classgame_1_1player_a5989a4505e504a80001aaea5ed1aad5a}{get\+Player\+ID}} () const
+\item 
+std\+::tuple$<$ double, double $>$ \mbox{\hyperlink{classgame_1_1player_a51f7c45644ec7d6595596ad49259085c}{get\+Player\+Pos}} () const
+\item 
+void \mbox{\hyperlink{classgame_1_1player_a3965af5dbd62655316d1d657591f81ab}{set\+Player\+Score}} (int score)
+\item 
+int \mbox{\hyperlink{classgame_1_1player_a056ee8ecdbe764ff9b42be70dd6d8f80}{get\+Player\+Number}} () const
+\item 
+void \mbox{\hyperlink{classgame_1_1player_a2ff63af032fdbd4b8bde6f8fcc4d1ef0}{left\+Movement}} ()
+\item 
+boost\+::asio\+::ip\+::udp\+::endpoint \mbox{\hyperlink{classgame_1_1player_a6f6b6d6e0901b8ba44437dbfb5a05e8f}{get\+Player\+Endpoint}} () const
+\begin{DoxyCompactList}\small\item\em get player endpoint \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1player_aff72b85725f012c0a6a234bfcf4d397e}{right\+Movement}} ()
+\item 
+void \mbox{\hyperlink{classgame_1_1player_a011ad0734e66c645d0a21922389238a7}{up\+Movement}} ()
+\item 
+void \mbox{\hyperlink{classgame_1_1player_a54780ba65ea03f33bff763087e2627f8}{down\+Movement}} ()
+\item 
+void \mbox{\hyperlink{classgame_1_1player_afbf158e4f694bd055bedafd5dbf5bf09}{set\+Player\+Life}} (int life)
+\item 
+void \mbox{\hyperlink{classgame_1_1player_a916635b344b5dfa9d1c369b8f4c2b6bb}{set\+Player\+Pos}} (double \+\_\+x, double \+\_\+y)
+\item 
+std\+::string \mbox{\hyperlink{classgame_1_1player_a563ff2ce5bc62700e6ddc182cf0614d6}{get\+Player\+Name}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+create player class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgame_1_1player_aadb08ab2c404c0f629f6113c5c1a43ca}\label{classgame_1_1player_aadb08ab2c404c0f629f6113c5c1a43ca}} 
+\index{game::player@{game::player}!player@{player}}
+\index{player@{player}!game::player@{game::player}}
+\doxysubsubsection{\texorpdfstring{player()}{player()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily player\+::player (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{int}]{player\+Number,  }\item[{boost\+::asio\+::ip\+::udp\+::endpoint}]{endpoint,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgame_1_1player_aab5d2e47b80e0481f09ca0df8b823057}\label{classgame_1_1player_aab5d2e47b80e0481f09ca0df8b823057}} 
+\index{game::player@{game::player}!````~player@{$\sim$player}}
+\index{````~player@{$\sim$player}!game::player@{game::player}}
+\doxysubsubsection{\texorpdfstring{$\sim$player()}{~player()}}
+{\footnotesize\ttfamily player\+::$\sim$player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgame_1_1player_a87102b947349d5a8fe0fd2fb7a015ace}\label{classgame_1_1player_a87102b947349d5a8fe0fd2fb7a015ace}} 
+\index{game::player@{game::player}!player@{player}}
+\index{player@{player}!game::player@{game::player}}
+\doxysubsubsection{\texorpdfstring{player()}{player()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily player\+::player (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgame_1_1player}{player}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgame_1_1player_a54780ba65ea03f33bff763087e2627f8}\label{classgame_1_1player_a54780ba65ea03f33bff763087e2627f8}} 
+\index{game::player@{game::player}!downMovement@{downMovement}}
+\index{downMovement@{downMovement}!game::player@{game::player}}
+\doxysubsubsection{\texorpdfstring{downMovement()}{downMovement()}}
+{\footnotesize\ttfamily void player\+::down\+Movement (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgame_1_1player_a6f6b6d6e0901b8ba44437dbfb5a05e8f}\label{classgame_1_1player_a6f6b6d6e0901b8ba44437dbfb5a05e8f}} 
+\index{game::player@{game::player}!getPlayerEndpoint@{getPlayerEndpoint}}
+\index{getPlayerEndpoint@{getPlayerEndpoint}!game::player@{game::player}}
+\doxysubsubsection{\texorpdfstring{getPlayerEndpoint()}{getPlayerEndpoint()}}
+{\footnotesize\ttfamily boost\+::asio\+::ip\+::udp\+::endpoint player\+::get\+Player\+Endpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get player endpoint 
+
+\begin{DoxyReturn}{Returns}
+boost\+::asio\+::ip\+::udp\+::endpoint 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1player_a5989a4505e504a80001aaea5ed1aad5a}\label{classgame_1_1player_a5989a4505e504a80001aaea5ed1aad5a}} 
+\index{game::player@{game::player}!getPlayerID@{getPlayerID}}
+\index{getPlayerID@{getPlayerID}!game::player@{game::player}}
+\doxysubsubsection{\texorpdfstring{getPlayerID()}{getPlayerID()}}
+{\footnotesize\ttfamily int player\+::get\+Player\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgame_1_1player_a563ff2ce5bc62700e6ddc182cf0614d6}\label{classgame_1_1player_a563ff2ce5bc62700e6ddc182cf0614d6}} 
+\index{game::player@{game::player}!getPlayerName@{getPlayerName}}
+\index{getPlayerName@{getPlayerName}!game::player@{game::player}}
+\doxysubsubsection{\texorpdfstring{getPlayerName()}{getPlayerName()}}
+{\footnotesize\ttfamily std\+::string player\+::get\+Player\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgame_1_1player_a056ee8ecdbe764ff9b42be70dd6d8f80}\label{classgame_1_1player_a056ee8ecdbe764ff9b42be70dd6d8f80}} 
+\index{game::player@{game::player}!getPlayerNumber@{getPlayerNumber}}
+\index{getPlayerNumber@{getPlayerNumber}!game::player@{game::player}}
+\doxysubsubsection{\texorpdfstring{getPlayerNumber()}{getPlayerNumber()}}
+{\footnotesize\ttfamily int player\+::get\+Player\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgame_1_1player_a51f7c45644ec7d6595596ad49259085c}\label{classgame_1_1player_a51f7c45644ec7d6595596ad49259085c}} 
+\index{game::player@{game::player}!getPlayerPos@{getPlayerPos}}
+\index{getPlayerPos@{getPlayerPos}!game::player@{game::player}}
+\doxysubsubsection{\texorpdfstring{getPlayerPos()}{getPlayerPos()}}
+{\footnotesize\ttfamily std\+::tuple$<$ double, double $>$ player\+::get\+Player\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgame_1_1player_a2ff63af032fdbd4b8bde6f8fcc4d1ef0}\label{classgame_1_1player_a2ff63af032fdbd4b8bde6f8fcc4d1ef0}} 
+\index{game::player@{game::player}!leftMovement@{leftMovement}}
+\index{leftMovement@{leftMovement}!game::player@{game::player}}
+\doxysubsubsection{\texorpdfstring{leftMovement()}{leftMovement()}}
+{\footnotesize\ttfamily void player\+::left\+Movement (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgame_1_1player_aff72b85725f012c0a6a234bfcf4d397e}\label{classgame_1_1player_aff72b85725f012c0a6a234bfcf4d397e}} 
+\index{game::player@{game::player}!rightMovement@{rightMovement}}
+\index{rightMovement@{rightMovement}!game::player@{game::player}}
+\doxysubsubsection{\texorpdfstring{rightMovement()}{rightMovement()}}
+{\footnotesize\ttfamily void player\+::right\+Movement (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgame_1_1player_afbf158e4f694bd055bedafd5dbf5bf09}\label{classgame_1_1player_afbf158e4f694bd055bedafd5dbf5bf09}} 
+\index{game::player@{game::player}!setPlayerLife@{setPlayerLife}}
+\index{setPlayerLife@{setPlayerLife}!game::player@{game::player}}
+\doxysubsubsection{\texorpdfstring{setPlayerLife()}{setPlayerLife()}}
+{\footnotesize\ttfamily void player\+::set\+Player\+Life (\begin{DoxyParamCaption}\item[{int}]{life }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgame_1_1player_a916635b344b5dfa9d1c369b8f4c2b6bb}\label{classgame_1_1player_a916635b344b5dfa9d1c369b8f4c2b6bb}} 
+\index{game::player@{game::player}!setPlayerPos@{setPlayerPos}}
+\index{setPlayerPos@{setPlayerPos}!game::player@{game::player}}
+\doxysubsubsection{\texorpdfstring{setPlayerPos()}{setPlayerPos()}}
+{\footnotesize\ttfamily void player\+::set\+Player\+Pos (\begin{DoxyParamCaption}\item[{double}]{\+\_\+x,  }\item[{double}]{\+\_\+y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgame_1_1player_a3965af5dbd62655316d1d657591f81ab}\label{classgame_1_1player_a3965af5dbd62655316d1d657591f81ab}} 
+\index{game::player@{game::player}!setPlayerScore@{setPlayerScore}}
+\index{setPlayerScore@{setPlayerScore}!game::player@{game::player}}
+\doxysubsubsection{\texorpdfstring{setPlayerScore()}{setPlayerScore()}}
+{\footnotesize\ttfamily void player\+::set\+Player\+Score (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgame_1_1player_a011ad0734e66c645d0a21922389238a7}\label{classgame_1_1player_a011ad0734e66c645d0a21922389238a7}} 
+\index{game::player@{game::player}!upMovement@{upMovement}}
+\index{upMovement@{upMovement}!game::player@{game::player}}
+\doxysubsubsection{\texorpdfstring{upMovement()}{upMovement()}}
+{\footnotesize\ttfamily void player\+::up\+Movement (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+server/include/\mbox{\hyperlink{game_8hpp}{game.\+hpp}}\item 
+server/source/\mbox{\hyperlink{player_8cpp}{player.\+cpp}}\end{DoxyCompactItemize}
